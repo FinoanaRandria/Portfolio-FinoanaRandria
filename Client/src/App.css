@@ -1,41 +1,36 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+:root{
+  /* partie declaration variable  */
+ --header-heigth:3rem;
+ 
+ --hue-color:250;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+  --frist-color:hsl(var(--hue-color),69%,61%);
+  --frist-color-second:hsl(var(--hue-color),69%,61%);
+  --frist-color-alt:hsl(var(--hue-color),57%,53%);
+  --frist-color-lighter:hsl(var(--hue-color),92%,85%);
+  --title-color:hsl(var(--hue-color),8%,15%);
+  --text-color:hsl(var(--hue-color),8%,45%);
+  --text-color-light:hsl(var(--hue-color),8%,65%);
+  --input-color:hsl(var(--hue-color),70%,96%);
+  --body-color:hsl(var(--hue-color),60%,99%);
+  --container-color:#FFF;
+  /* font que je vais utiliser */
+  --body-font:'Ubuntu Mono', monospace, serif;
+  /* font size */
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  --big-font-size:2rem;
+  --h1-font-sixe:1.5rem;
+  --h2-font-size:1.25rem;
+  --h3-font-size:1.125rem;
+  --normal-font-size:.938rem;
+  --small-font-size:.813rem;
+  --smaller-font-size:.75rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+  /* font weight */
 
-.card {
-  padding: 2em;
-}
+  --font-medium:500;
+  --font-semi-bold:600;
 
-.read-the-docs {
-  color: #888;
+  /* Margnes Bottom */
+ 
 }
