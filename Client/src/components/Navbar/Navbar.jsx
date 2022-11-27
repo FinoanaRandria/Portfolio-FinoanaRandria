@@ -8,6 +8,8 @@ import icon4  from "../../assets/icon/home.png"
 import icon5  from "../../assets/icon/landscape.png"
 import icon6  from "../../assets/icon/send.png"
 import icon7  from "../../assets/icon/user.png"
+import icon8  from "../../assets/icon/times.svg"
+import icon9  from "../../assets/icon/apple-alt.svg"
 function Navbar() {
   return (
     <div>
@@ -37,7 +39,15 @@ function Navbar() {
                 <a href="#ContactMe" className="nav_link">ContactME<img src={icon6} width={25}/></a>
               </li>
             </ul>
+               <img src={icon8} width={20} className="uil uil-times nav_close" id="nav-close"/>
           </div>
+          
+            <div className="nav_btns">
+                <div className="nav__toggle" id="nav-toggle">
+                  <img src={icon9} width={20}/>
+                </div>
+            </div>
+
         </nav>
       </header>
     </div>

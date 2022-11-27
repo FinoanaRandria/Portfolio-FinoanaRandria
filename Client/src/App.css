@@ -133,5 +133,43 @@ img{
 
 .grid{
   display: grid;
-  gap: 1.5;
+  gap: 1.5rem;
+}
+
+.header{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
+
+/* ----------patie du nav---------- */
+
+.nav{
+  max-width: 968px;
+  height: var(--header-heigth);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__logo:hover{
+  color: var(--frist-color);
+}
+
+.nav__toggle{
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav_toggle:hover{
+  color: var(--frist-color);
 }
