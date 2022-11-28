@@ -9,7 +9,7 @@ import icon5  from "../../assets/icon/landscape.png"
 import icon6  from "../../assets/icon/send.png"
 import icon7  from "../../assets/icon/user.png"
 import icon8  from "../../assets/icon/times.svg"
-import icon9  from "../../assets/icon/apple-alt.svg"
+import icon9  from "../../assets/icon/applications.png"
 function Navbar() {
   return (
     <div>
