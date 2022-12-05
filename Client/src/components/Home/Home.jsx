@@ -16,22 +16,22 @@ function Home() {
             <div className="home__content grid">
               <div className="home__social">
                 <a href="#" target={"_blank"} className="home_social-icon">
-                  <img src={icon10} width={25} />
+                  <img src={icon10} width={18} />
                 </a>
                 <a href="#" target={"_blank"} className="home_social-icon">
-                  <img src={icon12} width={25} />
+                  <img src={icon12} width={18} />
                 </a>
                 <a href="#" target={"_blank"} className="home_social-icon">
-                  <img src={icon11} width={25} />
+                  <img src={icon11} width={18} />
                 </a>
               </div>
-              <div className="home_img">
+              <div className="home__img">
                 <img src={pattern} />
               </div>
               <div className="home__data">
-                <h1 className="home_title">Hi, Finoana Randri</h1>
-                <h3>Forntend & Backend developer</h3>
-                <p className="home_description">
+                <h1 className="home__title">Hi,i'am Finoana Randri</h1>
+                <h3 className="home__subtitle">Forntend & Backend developer</h3>
+                <p className="home__description">
                   Développeur depuis deux ans ,je souhaite désormais mettre mes
                   compétences et mon expérience à votre service.
                 </p>
@@ -48,7 +48,7 @@ function Home() {
               <div className="home__scroll">
                 <a href="#about" className="home__srcoll-button button--flex">
                    <img src={mouse} className="home_scroll-mouse" width={10}/>
-                     <span className="home_scroll-name"> Scroll down</span>
+                     <span className="home_scroll-name"> Scroll down </span>
                      <img src={srcolldown} className="home_scroll-arrow" width={10}/>
                 </a>
               </div>
