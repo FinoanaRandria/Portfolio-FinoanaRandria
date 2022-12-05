@@ -1,9 +1,12 @@
 import React from "react";
 import "../../App.css";
-import icon10 from "../../assets/icon/linkedin-in.svg"
-import icon11 from "../../assets/icon/github.svg"
-import icon12 from "../../assets/icon/facebook.svg"
-import pattern from "../../assets/svg/pattern.svg"
+import icon10 from "../../assets/icon/linkedin-in.svg";
+import icon11 from "../../assets/icon/github.svg";
+import icon12 from "../../assets/icon/facebook.svg";
+import pattern from "../../assets/svg/pattern.svg";
+import icoContact from "../../assets/icon/send.png";
+import mouse from "../../assets/svg/mouse.svg"
+import srcolldown from "../../assets/svg/arrow-down.svg"
 function Home() {
   return (
     <div>
@@ -12,20 +15,43 @@ function Home() {
           <div className="home__container container grid">
             <div className="home__content grid">
               <div className="home__social">
-                <a href="#"  target={'_blank'} className="home_social-icon">
-                     <img src={icon10} width={25}/>
+                <a href="#" target={"_blank"} className="home_social-icon">
+                  <img src={icon10} width={25} />
                 </a>
-                <a href="#" target={'_blank'} className="home_social-icon">
-                      <img src={icon12} width={25}/>
+                <a href="#" target={"_blank"} className="home_social-icon">
+                  <img src={icon12} width={25} />
                 </a>
-                <a href="#" target={'_blank'} className="home_social-icon">
-                      <img src={icon11} width={25}/>
+                <a href="#" target={"_blank"} className="home_social-icon">
+                  <img src={icon11} width={25} />
                 </a>
               </div>
-                <div className="home_img">
-                      <img src={pattern}/>
-                </div>
+              <div className="home_img">
+                <img src={pattern} />
+              </div>
+              <div className="home__data">
+                <h1 className="home_title">Hi, Finoana Randri</h1>
+                <h3>Forntend & Backend developer</h3>
+                <p className="home_description">
+                  Développeur depuis deux ans ,je souhaite désormais mettre mes
+                  compétences et mon expérience à votre service.
+                </p>
+                <a href="#contact" className="button button--felx">
+                  Contact Me{" "}
+                  <img
+                    src={icoContact}
+                    width={15}
+                    className="uil uil-message button__icon"
+                  />
+                </a>
+              </div>
             </div>
+              <div className="home__scroll">
+                <a href="#about" className="home__srcoll-button button--flex">
+                   <img src={mouse} className="home_scroll-mouse" width={10}/>
+                     <span className="home_scroll-name"> Scroll down</span>
+                     <img src={srcolldown} className="home_scroll-arrow" width={10}/>
+                </a>
+              </div>
           </div>
         </section>
       </main>
