@@ -15,13 +15,13 @@ function Home() {
           <div className="home__container container grid">
             <div className="home__content grid">
               <div className="home__social">
-                <a href="#" target={"_blank"} className="home_social-icon">
+                <a href="#" target={"_blank"} className="home__social-icon">
                   <img src={icon10} width={18} />
                 </a>
-                <a href="#" target={"_blank"} className="home_social-icon">
+                <a href="#" target={"_blank"} className="home__social-icon">
                   <img src={icon12} width={18} />
                 </a>
-                <a href="#" target={"_blank"} className="home_social-icon">
+                <a href="#" target={"_blank"} className="home__social-icon">
                   <img src={icon11} width={18} />
                 </a>
               </div>
@@ -47,9 +47,9 @@ function Home() {
             </div>
               <div className="home__scroll">
                 <a href="#about" className="home__srcoll-button button--flex">
-                   <img src={mouse} className="home_scroll-mouse" width={10}/>
+                   <img src={mouse} className="home__scroll-mouse" width={10}/>
                      <span className="home_scroll-name"> Scroll down </span>
-                     <img src={srcolldown} className="home_scroll-arrow" width={10}/>
+                     <img src={srcolldown} className="home__scroll-arrow" width={10}/>
                 </a>
               </div>
           </div>
