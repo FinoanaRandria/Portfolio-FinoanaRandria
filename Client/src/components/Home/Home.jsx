@@ -3,6 +3,7 @@ import "../../App.css";
 import icon10 from "../../assets/icon/linkedin-in.svg"
 import icon11 from "../../assets/icon/github.svg"
 import icon12 from "../../assets/icon/facebook.svg"
+import pattern from "../../assets/svg/pattern.svg"
 function Home() {
   return (
     <div>
@@ -22,7 +23,7 @@ function Home() {
                 </a>
               </div>
                 <div className="home_img">
-                  
+                      <img src={pattern}/>
                 </div>
             </div>
           </div>
