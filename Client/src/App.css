@@ -2,7 +2,7 @@
   /* partie declaration variable  */
  --header-heigth:3rem;
  
- --hue-color:250;
+ --hue-color:230;
 
   --frist-color:hsl(var(--hue-color),69%,61%);
   --frist-color-second:hsl(var(--hue-color),69%,61%);
@@ -279,7 +279,7 @@ home__social-icon{
   margin-bottom: var(--mb-2); 
 }
 .home__scroll{
-  /* display none  */
+  display: none;
 }
 
 .home__scroll-button{
@@ -287,7 +287,7 @@ home__social-icon{
   transition: .3s;
 }
 .home__scroll-button:hover{
-  transform: translate(.25rem);
+  transform: translateY(.25rem);
 }
 
 .home__scroll-mouse{
@@ -298,4 +298,34 @@ home__social-icon{
   color: var(--title-color);
   font-weight: var(--font-medium);
   margin-right: var(--mb-0-25);
+}
+
+.hone__scroll-arrow{
+  font-size: 1.25rem;
+}
+/* partie du boutton home */
+
+.button{
+  display: inline-block;
+  background-color: var(--frist-color) ;
+  color: #FFF;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+
+}
+.button:hover{
+  background-color: var(--frist-color-alt);
+}
+
+.button__icon{
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.button--flex{
+  display: inline-block;
+  align-items: center;
+
 }

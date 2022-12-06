@@ -35,7 +35,7 @@ function Home() {
                   Développeur depuis deux ans ,je souhaite désormais mettre mes
                   compétences et mon expérience à votre service.
                 </p>
-                <a href="#contact" className="button button--felx">
+                <a href="#contact" className="button button--flex">
                   Contact Me{" "}
                   <img
                     src={icoContact}
@@ -46,9 +46,9 @@ function Home() {
               </div>
             </div>
               <div className="home__scroll">
-                <a href="#about" className="home__srcoll-button button--flex">
-                   <img src={mouse} className="home__scroll-mouse" width={10}/>
-                     <span className="home_scroll-name"> Scroll down </span>
+                <a href="#about" className="home__scroll-button button--flex">
+                   <img src={mouse} className="home__scroll-mouse" width={13}/>
+                     <span className="home__scroll-name"> Scroll down </span>
                      <img src={srcolldown} className="home__scroll-arrow" width={10}/>
                 </a>
               </div>
