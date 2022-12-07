@@ -242,7 +242,7 @@ img{
   row-gap: 1rem;
 }
 
-home__social-icon{
+.home__social-icon{
   font-size: 1.25rem;
   color:var(--frist-color)
 }
@@ -352,10 +352,22 @@ home__social-icon{
   margin-bottom: var(--mb-2-5);
 }
 
-about__info-title{
+.about__info-title{
  font-size: var(--h2-font-size);
  font-weight: var(--font-semi-bold);
+ color: var(--title-color);
 }
 .about__info-name{
   font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name{
+  display: block;
+  text-align: center;
+}
+
+.about__buttons{
+  display: flex;
+  justify-content: center;
 }
