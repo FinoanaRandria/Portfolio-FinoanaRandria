@@ -431,4 +431,22 @@ img{
 .skills__bar{
   background-color: var(--frist-color-lighter);
 }
+.skills__percentage{
+  display: block;
+  background-color: var(--frist-color);
+}
+.skills__html{
+  width: 90%;
+}
 
+.skills__css{
+  width: 75%;
+}
+
+.skills__js{
+  width: 58%;
+}
+
+.skills__react{
+  width: 67%;
+}

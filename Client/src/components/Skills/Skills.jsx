@@ -39,7 +39,7 @@ function Skills() {
                 <div className="skills__data">
                   <div className="skills__titles">
                     <h3 className="skills__name">CSS</h3>
-                    <span className="skills__number">70%</span>
+                    <span className="skills__number">75%</span>
                   </div>
                   <div className="skills__bar">
                     <span className="skills__percentage skills__css"></span>
@@ -49,7 +49,7 @@ function Skills() {
                 <div className="skills__data">
                   <div className="skills__titles">
                     <h3 className="skills__name">Javascript</h3>
-                    <span className="skills__number">53%</span>
+                    <span className="skills__number">58%</span>
                   </div>
                   <div className="skills__bar">
                     <span className="skills__percentage skills__js"></span>
@@ -59,7 +59,7 @@ function Skills() {
                 <div className="skills__data">
                   <div className="skills__titles">
                     <h3 className="skills__name">ReactJS</h3>
-                    <span className="skills__number">60%</span>
+                    <span className="skills__number">67%</span>
                   </div>
                   <div className="skills__bar">
                     <span className="skills__percentage skills__react"></span>
