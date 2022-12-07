@@ -244,7 +244,9 @@ img{
 
 .home__social-icon{
   font-size: 1.25rem;
-  color:var(--frist-color)
+  color:var(--frist-color); 
+  
+   
 }
 
 .home__social-icon:hover{
