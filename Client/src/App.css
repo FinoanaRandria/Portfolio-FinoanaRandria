@@ -15,7 +15,7 @@
   --body-color:hsl(var(--hue-color),60%,99%);
   --container-color:#FFF;
   /* font que je vais utiliser */
-  --body-font:'Ubuntu Mono', monospace, serif;
+  --body-font:'Poppins',sans-serif;
   /* font size */
 
   --big-font-size:2rem;
@@ -370,4 +370,5 @@ img{
 .about__buttons{
   display: flex;
   justify-content: center;
+ 
 }

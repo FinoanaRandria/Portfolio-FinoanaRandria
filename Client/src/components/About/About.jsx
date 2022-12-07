@@ -1,6 +1,7 @@
 import React from "react";
 import Photo from "../../assets/img/imagePhoto.png";
 import icon1 from "../../assets/svg/download.svg";
+
 import "../../App.css";
 function About() {
   return (
@@ -33,7 +34,7 @@ function About() {
                
               </div>
                   <div className="about__buttons">
-                    <a download="" href="../../assets/pdf/RANDRIAMBOLOLOMANANA Niriantsoa Finoana Sambatra.pdf" className="button button--flex" >
+                    <a  href="../../assets/pdf/cv.pdf" className="button button--flex" download >
                       Download CV  <img src={icon1} width={18} className="button__icon"/>
                     </a>
                   </div>
