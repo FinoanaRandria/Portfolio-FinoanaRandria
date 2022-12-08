@@ -1,10 +1,26 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "../../App.css";
 import bracket from "../../assets/svg/bracket.svg";
 import angle from "../../assets/svg/angle-down.svg";
 import server from "../../assets/svg/server.svg";
 import swatch from "../../assets/svg/swatchbook.svg";
 function Skills() {
+   
+    /* action sur skill */
+   useEffect(()=>{
+     const skillsContent = document.getElementsByClassName('skills__content')
+     const skillsHeader = document.querySelectorAll('.skills__header')
+          
+     let itemClass = this.parentNode.getElementsByClassName
+
+     for (i=0; i< skillsContent.length; i++ ){
+        skillsContent[i].className= 'skills__content skills__close'
+     }
+       if(itemClass === 'skills__content skills__close'){
+         this.parentNode.className = 'skills__content skills__open'
+       }
+   })
+
   return (
     <div>
       <section className="skills section">
@@ -14,7 +30,7 @@ function Skills() {
         <div className="skills__container container grid">
           <div>
             {/* skills part 1 */}
-            <div className="skills__content">
+            <div className="skills__content skills__open">
               <div className="skills__header">
                 <img className="skills__icon" src={bracket} width={27} />
                 <div>
@@ -68,7 +84,7 @@ function Skills() {
               </div>
             </div>
             {/* skills part 2 */}
-            <div className="skills__content">
+            <div className="skills__content skills__close">
               <div className="skills__header">
                 <img className="skills__icon" src={server} width={18} />
                 <div>
@@ -124,7 +140,7 @@ function Skills() {
           </div>
           <div>
             {/* skills part 3 */}
-            <div className="skills__content">
+            <div className="skills__content skills__close">
               <div className="skills__header">
                 <img className="skills__icon" src={swatch} width={22} />
                 <div>
