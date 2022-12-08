@@ -444,9 +444,36 @@ img{
 }
 
 .skills__js{
-  width: 58%;
+  width: 75%;
 }
 
 .skills__react{
-  width: 67%;
+  width: 75%;
+}
+.skills__node{
+  width: 63%;
+}
+
+.skills__mongo{
+  width: 68%;
+}
+
+.skills__sql{
+  width: 68%;
+}
+
+.skills__firebase{
+  width: 55%;
+}
+
+.skills__figma{
+  width: 65%;
+}
+
+.skills__sketch{
+  width: 46%;
+}
+
+.skills__photoshop{
+  width: 70%;
 }
