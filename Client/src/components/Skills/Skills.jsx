@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React,{useState} from "react";
 import "../../App.css";
 import bracket from "../../assets/svg/bracket.svg";
 import angle from "../../assets/svg/angle-down.svg";
@@ -7,19 +7,9 @@ import swatch from "../../assets/svg/swatchbook.svg";
 function Skills() {
    
     /* action sur skill */
-   useEffect(()=>{
-     const skillsContent = document.getElementsByClassName('skills__content')
-     const skillsHeader = document.querySelectorAll('.skills__header')
-          
-     let itemClass = this.parentNode.getElementsByClassName
-
-     for (i=0; i< skillsContent.length; i++ ){
-        skillsContent[i].className= 'skills__content skills__close'
-     }
-       if(itemClass === 'skills__content skills__close'){
-         this.parentNode.className = 'skills__content skills__open'
-       }
-   })
+         const [competence, setcompetence] = useState(false);
+         const [competence1, setcompetence1] = useState(false);
+         const [competence2, setcompetence2 ] = useState(false); 
 
   return (
     <div>
@@ -30,8 +20,8 @@ function Skills() {
         <div className="skills__container container grid">
           <div>
             {/* skills part 1 */}
-            <div className="skills__content skills__open">
-              <div className="skills__header">
+            <div className={competence ? "skills__content skills__open" : "skills__content skills__close"}>
+              <div onClick={() => setcompetence(!competence)} className="skills__header">
                 <img className="skills__icon" src={bracket} width={27} />
                 <div>
                   <h1 className="skills__title">Frontend developer</h1>
@@ -84,8 +74,8 @@ function Skills() {
               </div>
             </div>
             {/* skills part 2 */}
-            <div className="skills__content skills__close">
-              <div className="skills__header">
+            <div className={competence1 ? "skills__content skills__open" : "skills__content skills__close"}>
+              <div  onClick={() => setcompetence1(!competence1)} className="skills__header">
                 <img className="skills__icon" src={server} width={18} />
                 <div>
                   <h1 className="skills__title">Backend developer</h1>
@@ -140,8 +130,8 @@ function Skills() {
           </div>
           <div>
             {/* skills part 3 */}
-            <div className="skills__content skills__close">
-              <div className="skills__header">
+            <div className={competence2 ? "skills__content skills__open" : "skills__content skills__close"}>
+              <div onClick={() => setcompetence2(!competence2)} className="skills__header">
                 <img className="skills__icon" src={swatch} width={22} />
                 <div>
                   <h1 className="skills__title">Designer</h1>
