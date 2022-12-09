@@ -34,7 +34,7 @@ function About() {
                
               </div>
                   <div className="about__buttons">
-                    <a  href="../../assets/pdf/cv.pdf" className="button button--flex" download >
+                    <a  href="../../../pdf/cv.pdf" className="button button--flex" download >
                       Download CV  <img src={icon1} width={18} className="button__icon"/>
                     </a>
                   </div>
