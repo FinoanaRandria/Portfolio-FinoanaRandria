@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../App.css'
+import icon11 from '../../assets/svg/graduation-cap.svg'
+import icon12 from '../../assets/svg/briefcase.svg'
 function Qualificaton() {
   return (
     <div>
@@ -9,7 +11,14 @@ function Qualificaton() {
 
               <div className='qualification__container container'>
                 <div className='qualification__tabs'>
-                  <div className='qualification__button button--flex'></div>
+                  <div className='qualification__button button--flex'>
+                    <img src={icon11} width={18} className='qualification__icon'/>
+                      Education
+                  </div>
+                  <div className='qualification__button button--flex'>
+                  <img src={icon12} width={18} className='qualification__icon'/>
+                      Work
+                  </div>
                 </div>
               </div>
         </section>
