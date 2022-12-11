@@ -152,26 +152,7 @@ function Qualificaton() {
                 </div>
                 <div>
                   <span className="qualification__rounder"></span>
-                  <span className="qualification__line"></span>
-                </div>
-              </div>
-
-              {/*  qualification4*/}
-              <div className="qualification__data">
-                <div></div>
-                <div>
-                  <span className="qualification__rounder"></span>
-                  {/*  <span className="qualification__line"></span> */}
-                </div>
-                <div>
-                  <h3 className="qualification__title">Computer Enginner</h3>
-                  <span className="qualification__subtitle">
-                    ESTI-Antanimena
-                  </span>
-                  <div className="qualifiacation__calendar">
-                    <img src={icon13} width={18} />
-                    2021-2022
-                  </div>
+                  {/* <span className="qualification__line"></span> */}
                 </div>
               </div>
             </div>
