@@ -20,6 +20,18 @@ function Qualificaton() {
                       Work
                   </div>
                 </div>
+                    <div className='qualifiaction__sections'>
+                       {/* qualification section  */}
+                       <div className='qualifiaction__content'>
+                            {/*  qualification1*/}
+                              <div className='qualification__data'>
+                                  <div>
+                                     <h3 className='qualification__title'>Computer Enginner</h3>
+                                     <span className='qualification__subtitle'>ESTI-Antanimena</span>
+                                  </div>
+                              </div>
+                       </div>
+                    </div>
               </div>
         </section>
     </div>
