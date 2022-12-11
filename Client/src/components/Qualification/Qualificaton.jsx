@@ -22,7 +22,7 @@ function Qualificaton() {
             </div>
           </div>
           <div className="qualifiaction__sections">
-            {/* qualification section  */}
+            {/* qualification Content 1 */}
             <div className="qualifiaction__content">
               {/*  qualification1*/}
               <div className="qualification__data">
@@ -81,10 +81,10 @@ function Qualificaton() {
 
               {/*  qualification4*/}
               <div className="qualification__data">
-                 <div></div>
-                 <div>
+                <div></div>
+                <div>
                   <span className="qualification__rounder"></span>
-                  <span className="qualification__line"></span>
+                  {/*  <span className="qualification__line"></span> */}
                 </div>
                 <div>
                   <h3 className="qualification__title">Computer Enginner</h3>
@@ -96,7 +96,83 @@ function Qualificaton() {
                     2021-2022
                   </div>
                 </div>
-                
+              </div>
+            </div>
+
+            {/* qualificationContent  2  */}
+            <div className="qualifiaction__content">
+              {/*  qualification1*/}
+              <div className="qualification__data">
+                <div>
+                  <h3 className="qualification__title">Computer Enginner</h3>
+                  <span className="qualification__subtitle">
+                    ESTI-Antanimena
+                  </span>
+                  <div className="qualifiacation__calendar">
+                    <img src={icon13} width={18} />
+                    2021-2022
+                  </div>
+                </div>
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+              </div>
+
+              {/*  qualification2*/}
+              <div className="qualification__data">
+                <div></div>
+
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 className="qualification__title">mbola ho fenona</h3>
+                  <span className="qualification__subtitle">ecole no eto</span>
+                  <div className="qualifiacation__calendar">
+                    <img src={icon13} width={18} />
+                    2021-2022 date afa
+                  </div>
+                </div>
+              </div>
+
+              {/*  qualification3*/}
+              <div className="qualification__data">
+                <div>
+                  <h3 className="qualification__title">Computer Enginner</h3>
+                  <span className="qualification__subtitle">
+                    ESTI-Antanimena
+                  </span>
+                  <div className="qualifiacation__calendar">
+                    <img src={icon13} width={18} />
+                    2021-2022
+                  </div>
+                </div>
+                <div>
+                  <span className="qualification__rounder"></span>
+                  <span className="qualification__line"></span>
+                </div>
+              </div>
+
+              {/*  qualification4*/}
+              <div className="qualification__data">
+                <div></div>
+                <div>
+                  <span className="qualification__rounder"></span>
+                  {/*  <span className="qualification__line"></span> */}
+                </div>
+                <div>
+                  <h3 className="qualification__title">Computer Enginner</h3>
+                  <span className="qualification__subtitle">
+                    ESTI-Antanimena
+                  </span>
+                  <div className="qualifiacation__calendar">
+                    <img src={icon13} width={18} />
+                    2021-2022
+                  </div>
+                </div>
               </div>
             </div>
           </div>
