@@ -23,9 +23,9 @@ function Qualificaton() {
           </div>
           <div className="qualifiaction__sections">
             {/* qualification Content 1 */}
-            <div className="qualifiaction__content">
+            <div className="qualifiaction__content qualification__active" data-content id='education'>
               {/*  qualification1*/}
-              <div className="qualification__data">
+              <div className="qualification__data" >
                 <div>
                   <h3 className="qualification__title">Computer Enginner</h3>
                   <span className="qualification__subtitle">
@@ -100,7 +100,7 @@ function Qualificaton() {
             </div>
 
             {/* qualificationContent  2  */}
-            <div className="qualifiaction__content">
+            <div className="qualifiaction__content" data-content id='work'>
               {/*  qualification1*/}
               <div className="qualification__data">
                 <div>

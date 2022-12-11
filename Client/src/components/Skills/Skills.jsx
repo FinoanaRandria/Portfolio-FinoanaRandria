@@ -21,7 +21,7 @@ function Skills() {
           <div>
             {/* skills part 1 */}
             <div className={competence ? "skills__content skills__open" : "skills__content skills__close"}>
-              <div onClick={() => setcompetence(!competence)} className="skills__header">
+              <div onClick={() => setcompetence(!competence)} className="skills__header"> 
                 <img className="skills__icon" src={bracket} width={27} />
                 <div>
                   <h1 className="skills__title">Frontend developer</h1>
