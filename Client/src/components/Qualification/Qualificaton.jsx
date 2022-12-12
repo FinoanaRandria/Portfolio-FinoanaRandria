@@ -1,9 +1,13 @@
-import React from "react";
+import React , {useEffect} from "react";
 import "../../App.css";
 import icon11 from "../../assets/svg/graduation-cap.svg";
 import icon12 from "../../assets/svg/briefcase.svg";
 import icon13 from "../../assets/svg/calendar-alt.svg";
 function Qualificaton() {
+        useEffect(()=>{
+          const tabs = document.querySelectorAll('[data-target]')
+          const tabsContents = document.querySelectorAll('[data-content]')
+        })
   return (
     <div>
       <section className="qualification section">
