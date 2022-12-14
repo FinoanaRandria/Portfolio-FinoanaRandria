@@ -4,10 +4,7 @@ import icon11 from "../../assets/svg/graduation-cap.svg";
 import icon12 from "../../assets/svg/briefcase.svg";
 import icon13 from "../../assets/svg/calendar-alt.svg";
 function Qualificaton() {
-        useEffect(()=>{
-          const [qualif1, setqualif1] = useState(false);
-         const [qualif2, setqualif2 ] = useState(false); 
-        })
+       
   return (
     <div>
       <section className="qualification section">
