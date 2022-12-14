@@ -5,8 +5,8 @@ import icon12 from "../../assets/svg/briefcase.svg";
 import icon13 from "../../assets/svg/calendar-alt.svg";
 function Qualificaton() {
         useEffect(()=>{
-          const tabs = document.querySelectorAll('[data-target]')
-          const tabsContents = document.querySelectorAll('[data-content]')
+          const [qualif1, setqualif1] = useState(false);
+         const [qualif2, setqualif2 ] = useState(false); 
         })
   return (
     <div>
