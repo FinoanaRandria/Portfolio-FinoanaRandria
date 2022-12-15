@@ -1,8 +1,11 @@
 import React from 'react'
-
+import '../../App.css'
 function Service() {
   return (
-    <div>Service</div>
+    <div>
+      <section></section>
+
+    </div>
   )
 }
 
