@@ -56,7 +56,7 @@ function Navbar() {
                 <a href="#Skills" className="nav__link"> <img className="nav__icon" src={icon2} width={25}/> Skills</a>
               </li>
               <li className="nav__item">
-                <a href="#Services" className="nav__link"> <img className="nav__icon" src={icon1} width={25}/> Services</a>
+                <a href="#services" className="nav__link"> <img className="nav__icon" src={icon1} width={25}/> Services</a>
               </li>
               <li className="nav__item">
                 <a href="#Portfolio" className="nav__link"> <img className="nav__icon" src={icon5} width={25}/> Portfolio</a>

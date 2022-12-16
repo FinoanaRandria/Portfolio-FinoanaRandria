@@ -14,7 +14,7 @@ function Service() {
           <div className="services__content">
             <div>
                 <img src={icon16} width={20}/> 
-                <h4>Ui/Ux <br/> Designer </h4>
+                <h3>Ui/Ux <br/> Designer </h3>
              </div>
                 <span className="button button--flex button--small button--link services__button">
                     View More
