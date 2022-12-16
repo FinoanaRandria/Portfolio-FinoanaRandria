@@ -14,4 +14,6 @@ Made with ⚛react js😍
  boutton download
  de le sary atao flex
  -->
- 1h:09:15
+ 1h:14:15
+
+ <!-- fonction any le skill mbola tsy misy mande lo fixena -->

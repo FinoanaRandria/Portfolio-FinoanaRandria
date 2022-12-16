@@ -14,12 +14,15 @@ function Service() {
           <div className="services__content">
             <div>
                 <img src={icon16} width={20}/> 
-                <h3>Ui/Ux <br/> Designer </h3>
+                <h4>Ui/Ux <br/> Designer </h4>
              </div>
                 <span className="button button--flex button--small button--link services__button">
                     View More
-                    <img src={icon17} width={14}/> 
+                    <img  className="button__icon" src={icon17} width={14}/> 
                 </span>
+                  <div className="services__modal">
+                    
+                  </div>
           </div>
         </div>
       </section>
