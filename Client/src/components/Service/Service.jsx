@@ -21,7 +21,8 @@ function Service() {
                     <img  className="button__icon" src={icon17} width={14}/> 
                 </span>
                   <div className="services__modal">
-                    
+                      <div className="services__modal-title">Ui/Ux <br/>Designer </div>
+                         <img src={icon8}/>
                   </div>
           </div>
         </div>
