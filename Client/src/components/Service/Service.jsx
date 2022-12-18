@@ -2,6 +2,7 @@ import React from "react";
 import "../../App.css";
 import icon16 from "../../assets/svg/uikit.svg";
 import icon17 from '../../assets/svg/arrow-right.svg'
+import icon18 from '../../assets/icon/tiames.svg'
 function Service() {
   return (
     <div>
@@ -22,7 +23,7 @@ function Service() {
                 </span>
                   <div className="services__modal">
                       <div className="services__modal-title">Ui/Ux <br/>Designer </div>
-                         <img src={icon8}/>
+                         <img src={icon18} width={20}/>
                   </div>
           </div>
         </div>
