@@ -25,6 +25,10 @@ function Service() {
                       <div className="services__modal-title">Ui/Ux <br/>Designer </div>
                          <img src={icon18} width={20}/>
                   </div>
+                  <div className="services__modal">
+                      <div className="services__modal-title">Ui/Ux <br/>Designer </div>
+                         <img src={icon18} width={20}/>
+                  </div>
           </div>
         </div>
       </section>
