@@ -3,6 +3,7 @@ import "../../App.css";
 import icon16 from "../../assets/svg/uikit.svg";
 import icon17 from "../../assets/svg/arrow-right.svg";
 import icon18 from "../../assets/icon/tiames.svg";
+import icon19 from '../../assets/svg/check-circle.svg'
 function Service() {
   return (
     <div>
@@ -31,7 +32,9 @@ function Service() {
               </h4>
               <img src={icon18} width={20} className='services__modal-close' />
               <ul className="services__modal-services grid">
-                <li className="services__modal-service"></li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                </li>
               </ul>
             </div>
           </div>
