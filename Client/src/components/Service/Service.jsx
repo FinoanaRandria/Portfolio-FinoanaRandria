@@ -1,8 +1,8 @@
 import React from "react";
 import "../../App.css";
 import icon16 from "../../assets/svg/uikit.svg";
-import icon17 from '../../assets/svg/arrow-right.svg'
-import icon18 from '../../assets/icon/tiames.svg'
+import icon17 from "../../assets/svg/arrow-right.svg";
+import icon18 from "../../assets/icon/tiames.svg";
 function Service() {
   return (
     <div>
@@ -14,21 +14,23 @@ function Service() {
           {/* === service1=== */}
           <div className="services__content">
             <div>
-                <img src={icon16} width={20}/> 
-                <h3>Ui/Ux <br/> Designer </h3>
-             </div>
-                <span className="button button--flex button--small button--link services__button">
-                    View More
-                    <img  className="button__icon" src={icon17} width={14}/> 
-                </span>
-                  <div className="services__modal">
-                      <div className="services__modal-title">Ui/Ux <br/>Designer </div>
-                         <img src={icon18} width={20}/>
-                  </div>
-                  <div className="services__modal">
-                      <div className="services__modal-title">Ui/Ux <br/>Designer </div>
-                         <img src={icon18} width={20}/>
-                  </div>
+              <img src={icon16} width={20} />
+              <h3>
+                Ui/Ux <br /> Designer{" "}
+              </h3>
+            </div>
+            <span className="button button--flex button--small button--link services__button">
+              View More
+              <img className="button__icon" src={icon17} width={14} />
+            </span>
+            {/* correction */}
+            <div className="services__modal">
+              <h4 className="services__modal-title">
+                Ui/Ux <br />
+                Designer{" "}
+              </h4>
+              <img src={icon18} width={20} />
+            </div>
           </div>
         </div>
       </section>
