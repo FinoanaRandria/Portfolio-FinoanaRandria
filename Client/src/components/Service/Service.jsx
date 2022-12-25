@@ -34,6 +34,15 @@ function Service() {
               <ul className="services__modal-services grid">
                 <li className="services__modal-service services__modal-icon">
                    <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
                 </li>
               </ul>
             </div>
