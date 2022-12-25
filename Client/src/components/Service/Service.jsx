@@ -30,8 +30,12 @@ function Service() {
                 Ui/Ux <br />
                 Designer{" "}
               </h4>
-              <img src={icon18} width={20} className='services__modal-close' />
+              <img src={icon18} width={10} className='services__modal-close' />
               <ul className="services__modal-services grid">
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
                 <li className="services__modal-service services__modal-icon">
                    <img src={icon19} width={20}/>
                     <p>I develop the user interface</p>
