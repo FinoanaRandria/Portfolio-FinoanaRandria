@@ -51,6 +51,85 @@ function Service() {
               </ul>
             </div>
           </div>
+          {/* === service2=== */}
+          <div className="services__content">
+            <div>
+              <img src={icon16} width={20} />
+              <h3>
+                Ui/Ux <br /> Designer{" "}
+              </h3>
+            </div>
+            <span className="button button--flex button--small button--link services__button">
+              View More
+              <img className="button__icon" src={icon17} width={14} />
+            </span>
+            {/* correction */}
+            <div className="services__modal">
+              <h4 className="services__modal-title">
+                Frontend <br />
+                Developer{" "}
+              </h4>
+              <img src={icon18} width={10} className='services__modal-close' />
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* === service3=== */}
+          <div className="services__content">
+            <div>
+              <img src={icon16} width={20} />
+              <h3>
+                Ui/Ux <br /> Designer{" "}
+              </h3>
+            </div>
+            <span className="button button--flex button--small button--link services__button">
+              View More
+              <img className="button__icon" src={icon17} width={14} />
+            </span>
+            {/* correction */}
+            <div className="services__modal">
+              <h4 className="services__modal-title">
+                Ui/Ux <br />
+                Designer{" "}
+              </h4>
+              <img src={icon18} width={10} className='services__modal-close' />
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+                <li className="services__modal-service services__modal-icon">
+                   <img src={icon19} width={20}/>
+                    <p>I develop the user interface</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </div>
