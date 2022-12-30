@@ -573,3 +573,14 @@ bug mbola mila fixeko
   box-shadow: 0 2px 4px rgba(0,0,0,.15);
   transition: .3s;
  }
+
+ .services__content:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,.20);
+ }
+
+ .services__icon{
+  display: block;
+  font-size: 1.5rem;
+  color: var(--frist-color);
+  margin-bottom: var(--mb-1);
+ }

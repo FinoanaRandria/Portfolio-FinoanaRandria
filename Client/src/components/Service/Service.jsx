@@ -17,7 +17,7 @@ function Service() {
           {/* === service1=== */}
           <div className="services__content">
             <div>
-              <img src={icon16} width={20} />
+              <img className="services__icon" src={icon16} width={20} />
               <h3>
                 Ui/Ux <br /> Designer{" "}
               </h3>
@@ -56,7 +56,7 @@ function Service() {
           {/* === service2=== */}
           <div className="services__content">
             <div>
-              <img src={icon21} width={20} />
+              <img className="services__icon" src={icon21} width={20} />
               <h3>
                 Frontend<br /> Developer{" "}
               </h3>
@@ -96,7 +96,7 @@ function Service() {
           {/* === service3=== */}
           <div className="services__content">
             <div>
-              <img src={icon20} width={20} />
+              <img className="services__icon" src={icon20} width={20} />
               <h3>
                 Brading <br /> Designer{" "}
               </h3>
