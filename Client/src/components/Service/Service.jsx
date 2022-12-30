@@ -28,6 +28,7 @@ function Service() {
             </span>
             {/* correction */}
             <div className="services__modal">
+             <div className="services__modal-content">
               <h4 className="services__modal-title">
                 Ui/Ux <br />
                 Designer{" "}
@@ -51,6 +52,8 @@ function Service() {
                     <p>I develop the user interface</p>
                 </li>
               </ul>
+             </div>
+              
             </div>
           </div>
           {/* === service2=== */}
@@ -67,6 +70,7 @@ function Service() {
             </span>
             {/* correction */}
             <div className="services__modal">
+            <div className="services__modal-content">
               <h4 className="services__modal-title">
                 Frontend <br />
                 Developer{" "}
@@ -90,6 +94,8 @@ function Service() {
                     <p>I develop the user interface</p>
                 </li>
               </ul>
+             </div>
+              
             </div>
           </div>
 
@@ -107,6 +113,7 @@ function Service() {
             </span>
             {/* correction */}
             <div className="services__modal">
+            <div className="services__modal-content">
               <h4 className="services__modal-title">
                 Ui/Ux <br />
                 Designer{" "}
@@ -130,6 +137,8 @@ function Service() {
                     <p>I develop the user interface</p>
                 </li>
               </ul>
+             </div>
+              
             </div>
           </div>
         </div>
