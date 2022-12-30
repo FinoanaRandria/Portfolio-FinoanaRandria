@@ -4,6 +4,8 @@ import icon16 from "../../assets/svg/uikit.svg";
 import icon17 from "../../assets/svg/arrow-right.svg";
 import icon18 from "../../assets/icon/tiames.svg";
 import icon19 from '../../assets/svg/check-circle.svg'
+import icon20 from "../../assets/svg/pencil-alt.svg";
+import icon20 from "../../assets/svg/laptop.svg";
 function Service() {
   return (
     <div>
@@ -54,7 +56,7 @@ function Service() {
           {/* === service2=== */}
           <div className="services__content">
             <div>
-              <img src={icon16} width={20} />
+              <img src={icon21} width={20} />
               <h3>
                 Ui/Ux <br /> Designer{" "}
               </h3>
@@ -94,7 +96,7 @@ function Service() {
           {/* === service3=== */}
           <div className="services__content">
             <div>
-              <img src={icon16} width={20} />
+              <img src={icon20} width={20} />
               <h3>
                 Ui/Ux <br /> Designer{" "}
               </h3>
