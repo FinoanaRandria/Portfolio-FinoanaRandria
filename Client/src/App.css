@@ -332,6 +332,26 @@ img{
 
 }
 
+.button--small{
+  padding: .75rem 1rem;
+
+}
+
+.button--link{
+ padding: 0;
+ background-color: transparent;
+ color: var(--frist-color);
+
+}
+
+.button--link:hover{
+  
+  background-color: transparent;
+  color: var(--frist-color-alt);
+ 
+ }
+
+
 /* partie about  */
 
 
@@ -583,4 +603,15 @@ bug mbola mila fixeko
   font-size: 1.5rem;
   color: var(--frist-color);
   margin-bottom: var(--mb-1);
+ }
+
+ .services__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+ }
+
+ .services__button{
+  cursor: pointer;
+  font-size: var(--small-font-size);
  }
