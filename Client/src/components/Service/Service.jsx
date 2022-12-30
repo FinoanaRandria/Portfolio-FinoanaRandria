@@ -5,7 +5,7 @@ import icon17 from "../../assets/svg/arrow-right.svg";
 import icon18 from "../../assets/icon/tiames.svg";
 import icon19 from '../../assets/svg/check-circle.svg'
 import icon20 from "../../assets/svg/pencil-alt.svg";
-import icon20 from "../../assets/svg/laptop.svg";
+import icon21 from "../../assets/svg/laptop.svg";
 function Service() {
   return (
     <div>
@@ -58,7 +58,7 @@ function Service() {
             <div>
               <img src={icon21} width={20} />
               <h3>
-                Ui/Ux <br /> Designer{" "}
+                Frontend<br /> Developer{" "}
               </h3>
             </div>
             <span className="button button--flex button--small button--link services__button">
