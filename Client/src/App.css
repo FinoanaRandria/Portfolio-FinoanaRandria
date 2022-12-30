@@ -644,3 +644,18 @@ bug mbola mila fixeko
   padding: 1.5rem;
   border-radius: .5rem;
  }
+
+ .services__modal-services{
+  row-gap: 1rem;
+ }
+
+ .services__modal-service{
+display: flex;
+ }
+
+ .services__modal-title{
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+  cursor: pointer;
+ }
