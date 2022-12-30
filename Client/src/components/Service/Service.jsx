@@ -98,7 +98,7 @@ function Service() {
             <div>
               <img src={icon20} width={20} />
               <h3>
-                Ui/Ux <br /> Designer{" "}
+                Brading <br /> Designer{" "}
               </h3>
             </div>
             <span className="button button--flex button--small button--link services__button">
