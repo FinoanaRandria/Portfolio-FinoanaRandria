@@ -7,9 +7,8 @@ import icon19 from '../../assets/svg/check-circle.svg'
 import icon20 from "../../assets/svg/pencil-alt.svg";
 import icon21 from "../../assets/svg/laptop.svg";
 function Service() {
-   const [open, setopen] = useState(false)
-   const [open1, setopen1] = useState(false)
-   const [open2, setopen2] = useState(false)
+   const [open, setopen] = useState({active : ""})
+   
   return (
     <div>
       <section className="services section" id="services">
@@ -25,12 +24,12 @@ function Service() {
                 Ui/Ux <br /> Designer{" "}
               </h3>
             </div>
-            <span onClick={()=>{alert("booo") && setopen(true)}} className="button button--flex button--small button--link services__button">
+            <span onClick={()=>{setopen({active : "ui"})}} className="button button--flex button--small button--link services__button">
               View More
               <img className="button__icon" src={icon17} width={14} />
             </span>
             {/* correction */}
-            <div className={`${open ? "services__modal" : "services__modal_hidden"}`}>
+            <div className={`${open.active == "ui" ? "services__modal" : "services__modal_hidden"}`}>
              <div className="services__modal-content">
               <h4 className="services__modal-title">
                 Ui/Ux <br />
@@ -67,12 +66,12 @@ function Service() {
                 Frontend<br /> Developer{" "}
               </h3>
             </div>
-            <span className="button button--flex button--small button--link services__button">
+            <span onClick={()=>{setopen({active : "front"})}} className="button button--flex button--small button--link services__button">
               View More
               <img className="button__icon" src={icon17} width={14} />
             </span>
             {/* correction */}
-            <div className="services__modal">
+            <div className={`${open.active == "front" ? "services__modal" : "services__modal_hidden"}`}>
             <div className="services__modal-content">
               <h4 className="services__modal-title">
                 Frontend <br />
@@ -110,12 +109,12 @@ function Service() {
                 Brading <br /> Designer{" "}
               </h3>
             </div>
-            <span className="button button--flex button--small button--link services__button">
+            <span onClick={()=>{setopen({active : "brand"})}} className="button button--flex button--small button--link services__button">
               View More
               <img className="button__icon" src={icon17} width={14} />
             </span>
             {/* correction */}
-            <div className="services__modal">
+            <div className={`${open.active == "brand" ? "services__modal" : "services__modal_hidden"}`}>
             <div className="services__modal-content">
               <h4 className="services__modal-title">
                 Ui/Ux <br />
