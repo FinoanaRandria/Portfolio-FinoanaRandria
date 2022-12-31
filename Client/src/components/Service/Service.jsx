@@ -8,6 +8,8 @@ import icon20 from "../../assets/svg/pencil-alt.svg";
 import icon21 from "../../assets/svg/laptop.svg";
 function Service() {
    const [open, setopen] = useState(false)
+   const [open1, setopen1] = useState(false)
+   const [open2, setopen2] = useState(false)
   return (
     <div>
       <section className="services section" id="services">
@@ -28,7 +30,7 @@ function Service() {
               <img className="button__icon" src={icon17} width={14} />
             </span>
             {/* correction */}
-            <div className={`services__modal_hidden`}>
+            <div className={`${open ? "services__modal" : "services__modal_hidden"}`}>
              <div className="services__modal-content">
               <h4 className="services__modal-title">
                 Ui/Ux <br />
