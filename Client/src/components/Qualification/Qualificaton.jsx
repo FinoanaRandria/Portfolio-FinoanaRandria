@@ -4,7 +4,20 @@ import icon11 from "../../assets/svg/graduation-cap.svg";
 import icon12 from "../../assets/svg/briefcase.svg";
 import icon13 from "../../assets/svg/calendar-alt.svg";
 function Qualificaton() {
-       
+       useEffect(()=>{
+
+  const modalViews = document.querySelectorAll('.services__modal')
+  const modalBtns  = document.querySelectorAll('.services__button')
+  const modalCloses = document.querySelectorAll('.services__modal-close')      
+
+  let modal =  function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+  }
+
+
+
+
+       })
   return (
     <div>
       <section className="qualification section">
