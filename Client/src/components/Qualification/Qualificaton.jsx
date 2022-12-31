@@ -14,6 +14,11 @@ function Qualificaton() {
     modalViews[modalClick].classList.add('active-modal')
   }
 
+  modalBtns.forEach((modalBtn,i)=>{
+    modalBtn.addEventListener('click', ()=>{
+      modal(i)
+    })
+  })
 
 
 
