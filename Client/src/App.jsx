@@ -4,7 +4,9 @@ import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Qualificaton from './components/Qualification/Qualificaton'
 import Service from './components/Service/Service'
+import Portfol from './components/Portfolio/Portfol'
 import './App.css'
+
 function App() {
   
 
@@ -16,6 +18,7 @@ function App() {
       <Skills/>
       <Qualificaton/>
       <Service/>
+      <Portfol/>
     </div>
   )
 }
