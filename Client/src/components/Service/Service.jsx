@@ -9,6 +9,11 @@ import icon21 from "../../assets/svg/laptop.svg";
 function Service() {
    const [open, setopen] = useState({active : ""})
    
+
+   const reset = ()=>{
+     setopen({active:''})
+   }
+
   return (
     <div>
       <section className="services section" id="services">
@@ -35,7 +40,7 @@ function Service() {
                 Ui/Ux <br />
                 Designer{" "}
               </h4>
-              <img src={icon18} width={10} className='services__modal-close' />
+              <img onClick={reset} src={icon18} width={10} className='services__modal-close' />
               <ul className="services__modal-services grid">
                 <li className="services__modal-service services__modal-icon">
                    <img src={icon19} width={20}/>
@@ -77,7 +82,7 @@ function Service() {
                 Frontend <br />
                 Developer{" "}
               </h4>
-              <img src={icon18} width={10} className='services__modal-close' />
+              <img onClick={reset} src={icon18} width={10} className='services__modal-close' />
               <ul className="services__modal-services grid">
                 <li className="services__modal-service services__modal-icon">
                    <img src={icon19} width={20}/>
@@ -120,7 +125,7 @@ function Service() {
                 Ui/Ux <br />
                 Designer{" "}
               </h4>
-              <img src={icon18} width={10} className='services__modal-close' />
+              <img onClick={reset} src={icon18} width={10} className='services__modal-close' />
               <ul className="services__modal-services grid">
                 <li className="services__modal-service services__modal-icon">
                    <img src={icon19} width={20}/>
