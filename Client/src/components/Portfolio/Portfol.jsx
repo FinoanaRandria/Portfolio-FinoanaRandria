@@ -15,13 +15,13 @@ function Portfol() {
         {/* ==============portfolio 1 ================ */}
           <div className='portfolio__content grid'>
            
-             <img src={im1}/>
+             <img className='portfolio__img' src={im1}/>
              
            <div className='portfolio__data'>
                    <h3 className='portfolio__title'> Calculatrice Python </h3>
                    <p className='portfolio__description'>Une calulatrice fait avec le languague python</p>
                    <a  className='button button--flex button--small portfolio__button'>Demo
-                      {"   "}<img src={i1} width={12}/>
+                      {"   "}<img className='button__icon' src={i1} width={12}/>
                     </a>
            </div>
 
@@ -30,13 +30,13 @@ function Portfol() {
            {/* ==============portfolio 2 ================ */}
            <div className='portfolio__content grid'>
            
-           <img src={im2}/>
+           <img className='portfolio__img'  src={im2}/>
            
          <div className='portfolio__data'>
                  <h3 className='portfolio__title'> Web Clock</h3>
                  <p className='portfolio__description'>Une Montre  fait en Html5 Css3 Js</p>
                  <a  className='button button--flex button--small portfolio__button'>Demo
-                    {"   "}<img src={i1} width={12}/>
+                    {"   "}<img className='button__icon' src={i1} width={12}/>
                   </a>
          </div>
 
@@ -45,13 +45,13 @@ function Portfol() {
          {/* ==============portfolio 3 ================ */}
          <div className='portfolio__content grid'>
            
-           <img src={im3}/>
+           <img className='portfolio__img' src={im3}/>
            
          <div className='portfolio__data'>
                  <h3 className='portfolio__title'> Weather Apps </h3>
                  <p className='portfolio__description'>Une appli meteo web fait avec React et l'API de openweather </p>
                  <a  className='button button--flex button--small portfolio__button'>Demo
-                    {"   "}<img src={i1} width={12}/>
+                    {"   "}<img className='button__icon' src={i1} width={12}/>
                   </a>
          </div>
 
