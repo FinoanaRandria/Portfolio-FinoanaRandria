@@ -9,12 +9,24 @@ import About from './components/about/About'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Blog from './components/blog/Blog'
+import Pricing from './components/pricing/Pricing'
 function App() {
   
 
   return (
     <div className="App">
-      
+           <Sidebar/>
+           <main className='main'>
+              <Home/>
+              <About/>
+              <Service/>
+              <Resume/>
+              <Portfolio/>
+                <Pricing/>
+                <Testimonials/>
+                <Blog/>
+                 <Contact/>
+           </main>
     </div>
   )
 }
