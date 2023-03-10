@@ -51,5 +51,5 @@ const Navbar = () => {
     </div>
   )
 }
-
+/* animation de slide et contenu navbar */
 export default Navbar
