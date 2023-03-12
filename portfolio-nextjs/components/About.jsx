@@ -8,7 +8,7 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-[#5651e5]">About</p>
           <h2 className="py-4">Who I Am</h2>
 
-          <p className="py-2 text-gray-600">// I am not your normal developer</p>
+          <p className="py-2 text-gray-600">// I am Finoana Randri a junior developer</p>
 
           <p className="py-2 text-gray-600">
             I am a fast learner, passionate about solving complex problems and
@@ -27,7 +27,7 @@ const About = () => {
           <p className="py-2 text-gray-600 underline cursor-pointer"> Check out some of my latest projects.</p>
         </div>
         <div className="w-full h-full m-auto shadow-xl shadow-gray-400  rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-           < Image className="rounded-xl" src="/../public/assets/IMG_1171.JPG"  alt="pdp" width='225' height='50' />
+           < Image className="rounded-xl" src="/../public/assets/IMG_1171.JPG"  alt="pdp" width='325' height='65' />
         </div>
       </div>
     </div>
