@@ -19,7 +19,7 @@ const Projects = () => {
           />
 
           <ProjectsItems
-            title="G-tech"
+            title="G-Tech Esti"
             backgroundImg={proj1}
             projectUrl="/weatherapps"
           />
