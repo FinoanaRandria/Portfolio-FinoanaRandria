@@ -94,7 +94,7 @@ const Contact = () => {
                                          <label className="uppercase text-sm py-2" text-sm py-2>Message</label>
                                          <textarea className="border-2 rounded-lg p-3 border-gray-300"  rows="10"></textarea>
                                          </div>
-                                           <button className="w-full p-4 text-gray-100 mt-4">Send Message</button>
+                                           <button className="w-full p-4 text-gray-100 mt-4 hover:scale-105 ease-in duration-300 ">Send Message</button>
                                    </form>
 
                                </div>
