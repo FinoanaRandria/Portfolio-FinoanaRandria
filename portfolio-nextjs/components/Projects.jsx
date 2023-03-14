@@ -3,6 +3,7 @@ import Image from "next/image";
 import proj1 from "../public/assets/projects/proj1.png";
 import Link from "next/link";
 import ProjectsItems from "./ProjectsItems";
+import Gtech from "@/pages/Gtech";
 const Projects = () => {
   return (
     <div id="projects" className="w-full">
@@ -20,8 +21,8 @@ const Projects = () => {
 
           <ProjectsItems
             title="G-Tech Esti"
-            backgroundImg={proj1}
-            projectUrl="/proprety"
+            backgroundImg={Gtech}
+            projectUrl="/Gtech"
           />
 
           <ProjectsItems
