@@ -1,5 +1,5 @@
 
-import React ,{useState}from 'react'
+import React ,{useState, useEffect}from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineClose,AiOutlineMail,AiOutlineMenu}  from 'react-icons/ai'
@@ -11,31 +11,43 @@ const Navbar = () => {
 
 
  const [nav,setnav] = useState(false)
-
+ const [shadow, setshadow] = useState(false)
  const handleNAv = ()=>{
      setnav(!nav)
  }
 
+ useEffect(()=>{
+
+   const handleshadow = ()=>{
+      if(window.scrollY >= 90){
+        setshadow(true)
+      }else{
+         setshadow(false)
+      }
+   }
+   window.addEventListener('scroll',handleshadow)
+ },[])
+
   return (
-    <div className='fixed w-full h-20 shadow-xl z-[100]'>
+    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]': 'fixed w-full h-20  z-[100]'}>
        <div className='flex justify-between items-center w-full
-        h-full px-2 2xl:px-16 bg-[#ecf0f3]'>
+        h-full px-2 2xl:px-16 '>
            <Image src="/../public/assets/navLogo.png" alt='/' width='225' height='50' />
            <div>
               <ul className='hidden md:flex'>
                  <Link href='/'>
                      <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                  </Link>
-                 <Link href='/'>
+                 <Link href='/#about'>
                      <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
                  </Link>
-                 <Link href='/'>
+                 <Link href='/#skills'>
                      <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
                  </Link>
-                 <Link href='/'>
+                 <Link href='/#projects'>
                      <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
                  </Link>
-                 <Link href='/'>
+                 <Link href='/#contact'>
                      <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
                  </Link>
               </ul>
