@@ -17,24 +17,28 @@ const Projects = () => {
             title="Weather Apps"
             backgroundImg={proj1}
             projectUrl="/proprety"
+            techno="React JS"
           />
 
           <ProjectsItems
             title="G-Tech Esti"
             backgroundImg={Gtech}
             projectUrl="/Gtech"
+            techno="Node JS/Express JS"
+          />
+
+          <ProjectsItems
+            title="E-find"
+            backgroundImg={proj1}
+            projectUrl="/Efind"
+            techno="React JS /Sanity"
           />
 
           <ProjectsItems
             title="Weather Apps"
             backgroundImg={proj1}
             projectUrl="/proprety"
-          />
-
-          <ProjectsItems
-            title="Weather Apps"
-            backgroundImg={proj1}
-            projectUrl="/proprety"
+            techno="React JS"
           />
         </div>
       </div>

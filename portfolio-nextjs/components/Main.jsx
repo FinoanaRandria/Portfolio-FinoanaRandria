@@ -2,6 +2,7 @@ import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import { TypeAnimation } from 'react-type-animation'
 const Main = () => {
   return (
     <div id='home' className='w-full h-screen text-center'>
@@ -9,7 +10,14 @@ const Main = () => {
          <div>
                <p className='uppercase text-sm tracking-widest text-gray-600'>LET'S BUILD SOMETHINGS TOGETHER</p>
 
-               <h1 className='py-4 text-gray-700'>Hey I'am <span className='text-[#5651e5]'>Finoana</span> </h1>
+               <h1 className='py-4 text-gray-700'><span className="text-[#5651e5]">
+            <TypeAnimation
+                  sequence={["", 2000, "Hey I'am Finoana"]}
+                  wrapper="div"
+                  cursor={true}
+                  
+                />
+            </span>{" "} </h1>
 
                <h1 className='py-4 text-gray-700'>A Full-Stack Web Developer </h1>
                <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
