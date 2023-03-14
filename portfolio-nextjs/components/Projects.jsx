@@ -15,25 +15,25 @@ const Projects = () => {
           <ProjectsItems
             title="Weather Apps"
             backgroundImg={proj1}
-            projectUrl="/weatherapps"
+            projectUrl="/proprety"
           />
 
           <ProjectsItems
             title="G-Tech Esti"
             backgroundImg={proj1}
-            projectUrl="/weatherapps"
+            projectUrl="/proprety"
           />
 
           <ProjectsItems
             title="Weather Apps"
             backgroundImg={proj1}
-            projectUrl="/weatherapps"
+            projectUrl="/proprety"
           />
 
           <ProjectsItems
             title="Weather Apps"
             backgroundImg={proj1}
-            projectUrl="/weatherapps"
+            projectUrl="/proprety"
           />
         </div>
       </div>

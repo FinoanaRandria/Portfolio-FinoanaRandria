@@ -32,7 +32,11 @@ const Navbar = () => {
     <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]': 'fixed w-full h-20  z-[100]'}>
        <div className='flex justify-between items-center w-full
         h-full px-2 2xl:px-16 '>
-           <Image src="/../public/assets/navLogo.png" alt='/' width='225' height='50' />
+
+          <Link href='/'>
+            <Image src="/../public/assets/navLogo.png" alt='/' width='225' height='50' />
+          </Link>
+           
            <div>
               <ul className='hidden md:flex'>
                  <Link href='/'>
@@ -75,19 +79,19 @@ const Navbar = () => {
                <div className='py-4 flex-col'>
                     <ul className='uppercase'>
                        <Link href='/'>
-                         <li className='py-4 text-sm'>Home</li>
+                         <li onClick={()=> setnav(false)} className='py-4 text-sm'>Home</li>
                        </Link>
-                       <Link href='/'>
-                         <li className='py-4 text-sm'>About</li>
+                       <Link href='/#about'>
+                         <li onClick={()=> setnav(false)} className='py-4 text-sm'>About</li>
                        </Link>
-                       <Link href='/'>
-                         <li className='py-4 text-sm'>Skills</li>
+                       <Link href='/#skills'>
+                         <li onClick={()=> setnav(false)} className='py-4 text-sm'>Skills</li>
                        </Link>
-                       <Link href='/'>
-                         <li className='py-4 text-sm'>Projects</li>
+                       <Link href='/#projects'>
+                         <li onClick={()=> setnav(false)} className='py-4 text-sm'>Projects</li>
                        </Link>
-                       <Link href='/'>
-                         <li className='py-4 text-sm'>Contact</li>
+                       <Link href='/#contact'>
+                         <li onClick={()=> setnav(false)} className='py-4 text-sm'>Contact</li>
                        </Link>
                     </ul>
                       <div className='pt-40'>
