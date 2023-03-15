@@ -1,11 +1,27 @@
-import React from "react";
+import React, {useEffect,useRef} from "react";
 import {IoIosSchool} from 'react-icons/io'
 import {FaLaptopCode,FaLaptop} from 'react-icons/fa'
 import lottie from 'lottie-web';
-
+  import animationData from '../public/assets/json/88009-diploma-certificate-animation-icon.json';
 const Education = () => {
+
+
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+     
+    lottie.loadAnimation({
+      container: containerRef.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+    });
+  }, []);
+
+
   return (
-    <div div id="education" className="w-full lg:h-screen  flex items-center">
+    <div  id="education" className="w-full lg:h-screen  flex items-center">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Education
@@ -57,6 +73,7 @@ const Education = () => {
             </div>
           </div>
         </div>
+        <div className="w-[300px] flex justify-center mx-auto" ref={containerRef}></div>; 
       </div>
     </div>
   );
