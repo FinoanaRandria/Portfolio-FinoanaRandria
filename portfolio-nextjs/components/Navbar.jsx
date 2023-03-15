@@ -18,7 +18,7 @@ const Navbar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.asPath == "/proprety" || router.asPath == "/Gtech")
+    if (router.asPath == "/proprety" || router.asPath == "/Gtech" || router.asPath == "/Gtech" || router.asPath == "/Echat")
      {
       setnavBg("transparent");
 

@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import proj1 from "../public/assets/projects/proj1.png";
+import proj2 from '../public/assets/projects/proj2.png'
+import proj3 from '../public/assets/projects/proj3.png'
+import proj4 from '../public/assets/projects/proj4.png'
 import Link from "next/link";
 import ProjectsItems from "./ProjectsItems";
 import Gtech from "@/pages/Gtech";
@@ -22,23 +25,23 @@ const Projects = () => {
 
           <ProjectsItems
             title="G-Tech Esti"
-            backgroundImg={Gtech}
+            backgroundImg={proj3}
             projectUrl="/Gtech"
             techno="Node JS/Express JS"
           />
 
           <ProjectsItems
             title="E-find"
-            backgroundImg={proj1}
+            backgroundImg={proj2}
             projectUrl="/Efind"
             techno="React JS /Sanity"
           />
 
           <ProjectsItems
-            title="Weather Apps"
-            backgroundImg={proj1}
-            projectUrl="/proprety"
-            techno="React JS"
+            title="Echat App "
+            backgroundImg={proj4}
+            projectUrl="/Echat"
+            techno="Node JS/Socket io"
           />
         </div>
       </div>

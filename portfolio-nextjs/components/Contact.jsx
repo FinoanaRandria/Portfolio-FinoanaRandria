@@ -5,8 +5,14 @@ import { HiOutlineChevronDoubleUp, HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
+import toast ,{Toaster} from 'react-hot-toast'
+
+
 
 const Contact = () => {
+
+const notify = () => toast.success('Thanks your email is sended')
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -21,7 +27,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          alert('Email is send')
+          console.log('sended')
         },
         (error) => {
           console.log(error.text);
@@ -145,8 +151,9 @@ const Contact = () => {
                     rows="10"
                   ></textarea>
                 </div>
-                <button  className="w-full p-4 text-gray-100 mt-4 hover:scale-105 ease-in duration-300 ">
+                <button  className="w-full p-4 text-gray-100 mt-4 hover:scale-105 ease-in duration-300 " onClick={notify}>
                   Send Message
+                  
                 </button>
               </form>
             </div>

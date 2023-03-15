@@ -6,11 +6,14 @@ import About from '../../components/About'
 import Skills from '../../components/Skills'
 import Projects from '../../components/Projects'
 import Contact from '../../components/Contact'
-
+import toast ,{Toaster} from 'react-hot-toast'
 
 
 
 export default function Home() {
+
+  
+
   return (
     <>
       <Head>
@@ -26,7 +29,10 @@ export default function Home() {
        <Skills/>
        <Projects/>
         <Contact/>
-
+        <Toaster
+                      position="bottom-center"
+                      reverseOrder={false}
+                  />
 
        
     </>

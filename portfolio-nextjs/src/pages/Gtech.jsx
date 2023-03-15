@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import imageGtech from "../../public/assets/projects/proj2.jpg";
+import imageG from "../../public/assets/projects/proj3.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import { TbArrowBackUp } from "react-icons/tb";
 import Link from "next/link";
@@ -13,11 +13,11 @@ const Gtech = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={imageGtech}
+          src={imageG}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Gthech</h2>
+          <h2 className="py-2">Gthech 🏫</h2>
           <h3>React Js/Node JS/SQL</h3>
         </div>
       </div>
