@@ -91,7 +91,7 @@ const Contact = () => {
               <form ref={form} onSubmit={sendEmail}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2" text-sm py-2>
+                    <label className="uppercase text-sm py-2" >
                       Name
                     </label>
                     <input
@@ -102,7 +102,7 @@ const Contact = () => {
                   </div>
 
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2" text-sm py-2>
+                    <label className="uppercase text-sm py-2" >
                       Phone Number
                     </label>
                     <input
@@ -114,7 +114,7 @@ const Contact = () => {
                 </div>
 
                 <div className=" flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" text-sm py-2>
+                  <label className="uppercase text-sm py-2" >
                     Email
                   </label>
                   <input
@@ -125,7 +125,7 @@ const Contact = () => {
                 </div>
 
                 <div className=" flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" text-sm py-2>
+                  <label className="uppercase text-sm py-2" >
                     Subject
                   </label>
                   <input
@@ -136,7 +136,7 @@ const Contact = () => {
                 </div>
 
                 <div className=" flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" text-sm py-2>
+                  <label className="uppercase text-sm py-2" >
                     Message
                   </label>
                   <textarea
