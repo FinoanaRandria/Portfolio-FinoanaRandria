@@ -1,7 +1,7 @@
 import React from "react";
 import {IoIosSchool} from 'react-icons/io'
 import {FaLaptopCode,FaLaptop} from 'react-icons/fa'
-
+import lottie from 'lottie-web';
 
 const Education = () => {
   return (
