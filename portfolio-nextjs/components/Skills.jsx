@@ -150,12 +150,18 @@ const Skills = () => {
                        <h3>JAVA</h3>
                     </div>
                 </div>
+
+
+
+                
             </div>
 
 
             
 
           </div>
+
+          
       </div>
     </div>
   )

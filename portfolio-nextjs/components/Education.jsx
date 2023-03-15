@@ -8,7 +8,7 @@ const Education = () => {
 
   const containerRef = useRef(null);
   let anim = null;
-
+/* tsy maintsy atao destroy le anim satria  */
   useEffect(() => {
     anim = lottie.loadAnimation({
       container: containerRef.current,
@@ -27,7 +27,7 @@ const Education = () => {
 
 
   return (
-    <div  id="education" className="w-full lg:h-screen  flex items-center">
+    <div  id="education" className="w-full lg:h-screen min-h-[900px]  flex items-center">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Education
@@ -81,7 +81,7 @@ const Education = () => {
         </div>
         
         
-        <div className="w-[300px] flex justify-center mx-auto" ref={containerRef}></div>
+        <div className="w-[300px] flex justify-center mx-auto mb-4" ref={containerRef}></div>
         
       </div>
     </div>

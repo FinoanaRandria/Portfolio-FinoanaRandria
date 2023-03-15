@@ -18,7 +18,7 @@ const Navbar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.asPath == "/proprety" || router.asPath == "/Gtech" || router.asPath == "/Gtech" || router.asPath == "/Echat")
+    if (router.asPath == "/proprety" || router.asPath == "/Gtech" || router.asPath == "/Efind" || router.asPath == "/Echat")
      {
       setnavBg("transparent");
 
@@ -140,6 +140,11 @@ const Navbar = () => {
               <Link href="/#about">
                 <li onClick={() => setnav(false)} className="py-4 text-sm">
                   About
+                </li>
+              </Link>
+              <Link href="/#education">
+                <li onClick={() => setnav(false)} className="py-4 text-sm">
+                  Etucation
                 </li>
               </Link>
               <Link href="/#skills">
