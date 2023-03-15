@@ -7,6 +7,7 @@ import Skills from '../../components/Skills'
 import Projects from '../../components/Projects'
 import Contact from '../../components/Contact'
 import Education from '../../components/Education'
+import Tools from '../../components/Tools'
 import toast ,{Toaster} from 'react-hot-toast'
 
 
@@ -29,8 +30,9 @@ export default function Home() {
        <About/>
     
        <Education/>
-
+         
        <Skills/>
+       <Tools/>
        <Projects/>
         <Contact/>
         <Toaster
