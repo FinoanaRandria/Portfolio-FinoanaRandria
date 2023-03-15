@@ -28,16 +28,10 @@ const Efind = () => {
           <h2 className="py-4">Overview</h2>
           <p>
             <strong> Description:</strong>
-            The weather app is a simple web application that allows the user to
-            get the weather forecast for a specific city. The application uses
-            the OpenWeather API to retrieve the weather data.
+            E-Find is an innovative platform designed to help companies find students looking for a work-study program. This platform connects companies and students by offering a simple, fast and efficient solution for the recruitment needs of each party.
             <br />
             <strong>Features:</strong>
-            The user can enter the city name to get the current and upcoming
-            weather forecast for that city. The weather forecast includes the
-            current temperature, time, wind speed and humidity. The application
-            also displays an icon representing the current weather. The user can
-            toggle between Celsius and Fahrenheit temperature units.
+            Thanks to E-Find, companies can post work-study offers on the platform and consult the profiles of students looking for a work-study position. Companies can filter candidates according to their academic profile, professional experience, skills and interests to find the most suitable candidates for their needs
           </p>
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4">Code</button>

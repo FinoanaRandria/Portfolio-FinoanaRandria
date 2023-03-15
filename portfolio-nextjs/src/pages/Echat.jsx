@@ -28,16 +28,10 @@ const Echat = () => {
           <h2 className="py-4">Overview</h2>
           <p>
             <strong> Description:</strong>
-            The weather app is a simple web application that allows the user to
-            get the weather forecast for a specific city. The application uses
-            the OpenWeather API to retrieve the weather data.
+            echat is a simple and easy-to-use mini chat application for users who want to communicate in real time with their friends, family or colleagues. This platform allows you to create chat rooms, send instant messages.
             <br />
             <strong>Features:</strong>
-            The user can enter the city name to get the current and upcoming
-            weather forecast for that city. The weather forecast includes the
-            current temperature, time, wind speed and humidity. The application
-            also displays an icon representing the current weather. The user can
-            toggle between Celsius and Fahrenheit temperature units.
+            Echat is the ideal tool for users who are looking for a simple and convenient chat solution, without the hassle of complex features. Whether for business or personal discussions, Echat offers a convenient, user-friendly and secure chat experience.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4">Code</button>

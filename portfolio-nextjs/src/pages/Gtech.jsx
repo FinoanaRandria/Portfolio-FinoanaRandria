@@ -24,20 +24,34 @@ const Gtech = () => {
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <p className="text-xl tracking-widest uppercase text-[#5651e5]">Project</p>
+          <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+            Project
+          </p>
           <h2 className="py-4">Overview</h2>
           <p>
             <strong> Description:</strong>
-            The weather app is a simple web application that allows the user to
-            get the weather forecast for a specific city. The application uses
-            the OpenWeather API to retrieve the weather data.
+            G-Tech is an innovative platform that aims to digitize and simplify
+            university administrative tasks, including room management, faculty
+            salaries, schedules and invoices. This platform offers a practical
+            and efficient solution for universities and higher education
+            institutions that wish to modernize their administrative management.
             <br />
             <strong>Features:</strong>
-            The user can enter the city name to get the current and upcoming
-            weather forecast for that city. The weather forecast includes the
-            current temperature, time, wind speed and humidity. The application
-            also displays an icon representing the current weather. The user can
-            toggle between Celsius and Fahrenheit temperature units.
+            With G-Tech, universities can manage their rooms intuitively and in
+            real time. The platform allows you to view the availability of each
+            room and easily reserve time slots according to your needs.<br/>
+            b
+            Likewise, the management of professors' salaries is simplified
+            thanks to an automated system that calculates salaries based on
+            hours worked and hourly rates. When it comes to scheduling, G-Tech
+            makes it easy to create online schedules and share them with
+            students and teachers. The platform also offers features to manage
+            absences and substitutions in real time, making it easier to manage
+            classes. <br/>
+            Finally, G-Tech facilitates billing by providing a solution
+            for generating and sending electronic invoices, as well as making
+            online payments. This feature automates payment management and
+            reduces the time spent on invoicing.
           </p>
           <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           <button className="px-8 py-2 mt-4">Code</button>
@@ -65,7 +79,7 @@ const Gtech = () => {
           </div>
         </div>
         <div>
-          <Link  href="/#projects">
+          <Link href="/#projects">
             <div className="rounded-full flex items-center justify-center shadow-lg shadow-gray-400 p-3 w-10 h-10 cursor-pointer">
               <TbArrowBackUp className="" size={30} />
             </div>
