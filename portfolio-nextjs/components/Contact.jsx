@@ -40,10 +40,10 @@ const notify = () => toast.success('Thanks your email is sended')
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Eduction
+          Contact
         </p>
 
-        <h2 className="py-4">MY Education </h2>
+        <h2 className="py-4">MY Contact </h2>
 
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}

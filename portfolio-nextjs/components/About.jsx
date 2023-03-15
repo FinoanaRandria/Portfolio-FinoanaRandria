@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen flex items-center min-h-[900px] py-16">
@@ -29,10 +29,14 @@ const About = () => {
             talented and motivated Fullstack developer.
           </p>
 
-          <p className="py-2 text-gray-600 underline cursor-pointer mb-5">
+          <Link href="/#projects">
+              <p className="py-2 text-gray-600 underline cursor-pointer mb-5">
             {" "}
             Check out some of my latest projects.
           </p>
+            </Link>
+
+         
 
           <div className="mb-7">
           <a

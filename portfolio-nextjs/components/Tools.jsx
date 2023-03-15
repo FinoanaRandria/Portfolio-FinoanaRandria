@@ -1,6 +1,33 @@
-import React from "react";
+import React , {useRef, useEffect}from "react";
 import Image from "next/image";
+import animationData2 from '../public/assets/json/40238-happy-coding.json'
+import lottie from "lottie-web";
 const Tools = () => {
+
+
+
+    const containerRef2 = useRef(null);
+    let anim = null;
+  /* tsy maintsy atao destroy le anim satria  */
+    useEffect(() => {
+      anim = lottie.loadAnimation({
+        container: containerRef2.current,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        animationData: animationData2,
+      });
+  
+      return () => {
+        anim.destroy();
+      };
+    }, []);
+
+
+
+
+
+
   return (
     <div id="skills" className="w-full lg:h-screen min-h-[900px]  p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
@@ -116,7 +143,7 @@ const Tools = () => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Androi Studio</h3>
+                <h3>Android STD</h3>
               </div>
             </div>
           </div>
@@ -137,6 +164,7 @@ const Tools = () => {
             </div>
           </div>
         </div>
+        <div className="w-[300px] flex justify-center mx-auto mb-4" ref={containerRef2}></div>
       </div>
     </div>
   );
