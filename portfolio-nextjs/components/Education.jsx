@@ -7,17 +7,23 @@ const Education = () => {
 
 
   const containerRef = useRef(null);
+  let anim = null;
 
   useEffect(() => {
-     
-    lottie.loadAnimation({
+    anim = lottie.loadAnimation({
       container: containerRef.current,
-      renderer: 'svg',
+      renderer: "svg",
       loop: true,
       autoplay: true,
       animationData: animationData,
     });
+
+    return () => {
+      anim.destroy();
+    };
   }, []);
+
+  
 
 
   return (
@@ -73,7 +79,10 @@ const Education = () => {
             </div>
           </div>
         </div>
-        <div className="w-[300px] flex justify-center mx-auto" ref={containerRef}></div>; 
+        
+        
+        <div className="w-[300px] flex justify-center mx-auto" ref={containerRef}></div>
+        
       </div>
     </div>
   );
