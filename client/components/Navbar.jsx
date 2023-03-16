@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
+import logonav from '../assets/navLogo.png'
 const Navbar = () => {
   const [nav, setnav] = useState(false);
   const [shadow, setshadow] = useState(false);
@@ -59,7 +60,7 @@ const Navbar = () => {
       >
         <Link href="/">
           <Image
-            src="/../public/assets/navLogo.png"
+            src={logonav}
             alt="/"
             width="225"
             height="50"
