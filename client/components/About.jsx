@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import pdp from '../assets/IMG_1171.JPG'
+import pdp from '../assets/imagepdp.JPG'
 import { motion } from "framer-motion";
 const About = () => {
   return (
