@@ -7,15 +7,19 @@ import proj4 from '../public/assets/projects/proj4.png'
 import Link from "next/link";
 import ProjectsItems from "./ProjectsItems";
 import Gtech from "@/pages/Gtech";
+import {motion} from 'framer-motion'
+
+
+
 const Projects = () => {
   return (
     <div id="projects" className="w-full  min-h-[900px]">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <motion.p whileInView={{opacity : [0,1],x:[-30,0]}} transition={{duration:0.4,}}  className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
-        </p>
-        <h2 className="py-4">What I've Built </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        </motion.p>
+        <motion.h2 whileInView={{opacity : [0,1],x:[-50,0]}} transition={{duration:0.4,}}  className="py-4">What I've Built </motion.h2>
+        <motion.div whileInView={{opacity : [0,1],x:[-100,0]}} transition={{duration:0.4,}}  className="grid md:grid-cols-2 gap-8">
           <ProjectsItems
             title="Weather Apps"
             backgroundImg={proj1}
@@ -43,7 +47,7 @@ const Projects = () => {
             projectUrl="/Echat"
             techno="Node JS/Socket io"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

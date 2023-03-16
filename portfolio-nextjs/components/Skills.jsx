@@ -1,12 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
+import {motion} from 'framer-motion'
 const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-screen p-2 min-h-[900px]'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-          <p className='text-xl  tracking-widest uppercase text-[#5651e5]'>Skills</p>
-          <h2 className='py-4'>What I Can Do</h2>
-          <div className='grid md:grid-flow-col-2 lg:grid-cols-4 gap-8'>
+          <motion.p whileInView={{opacity : [0,1],x:[-30,0]}} transition={{duration:0.4,}}  className='text-xl  tracking-widest uppercase text-[#5651e5]'>Skills</motion.p>
+          <motion.h2 whileInView={{opacity : [0,1],x:[-50,0]}} transition={{duration:0.4,}}  className='py-4'>What I Can Do</motion.h2>
+          <motion.div whileInView={{opacity : [0,1],x:[-100,0]}} transition={{duration:0.4,}}  className='grid md:grid-flow-col-2 lg:grid-cols-4 gap-8'>
            
             <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
@@ -159,7 +160,7 @@ const Skills = () => {
 
             
 
-          </div>
+          </motion.div>
 
           
       </div>

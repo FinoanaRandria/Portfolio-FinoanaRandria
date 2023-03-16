@@ -2,13 +2,14 @@ import React , {useRef, useEffect}from "react";
 import Image from "next/image";
 import animationData2 from '../public/assets/json/40238-happy-coding.json'
 import lottie from "lottie-web";
+import {motion} from 'framer-motion'
 const Tools = () => {
 
 
 
     const containerRef2 = useRef(null);
     let anim = null;
-  /* tsy maintsy atao destroy le anim satria  */
+  /* tsy maintsy atao destroy le anim satria tsy vaofafa tsara ny cache le sary de miduplique le izy */
     useEffect(() => {
       anim = lottie.loadAnimation({
         container: containerRef2.current,
@@ -29,13 +30,13 @@ const Tools = () => {
 
 
   return (
-    <div id="skills" className="w-full lg:h-screen min-h-[900px] h-auto  p-2">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full  ">
-        <p className="text-xl  tracking-widest uppercase text-[#5651e5]">
+    <div id="tools" className="w-full lg:h-screen min-h-[900px] h-auto  p-2">
+      <div  className="max-w-[1240px] mx-auto flex flex-col justify-center h-full  ">
+        <motion.p whileInView={{opacity : [0,1],x:[-30,0]}} transition={{duration:0.4,}} className="text-xl  tracking-widest uppercase text-[#5651e5]">
           Tools
-        </p>
-        <h2 className="py-4">What I use</h2>
-        <div className="grid md:grid-flow-col-2 lg:grid-cols-4 gap-8">
+        </motion.p>
+        <motion.h2 whileInView={{opacity : [0,1],x:[-50,0]}} transition={{duration:0.4,}} className="py-4">What I use</motion.h2>
+        <motion.div whileInView={{opacity : [0,1],x:[-100,0]}} transition={{duration:0.4,}}className="grid md:grid-flow-col-2 lg:grid-cols-4 gap-8">
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
@@ -163,7 +164,7 @@ const Tools = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="w-[300px] flex justify-center mx-auto mb-4" ref={containerRef2}></div>
       </div>
     </div>

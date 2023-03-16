@@ -6,7 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import toast ,{Toaster} from 'react-hot-toast'
-
+import {motion} from 'framer-motion'
 
 
 const Contact = () => {
@@ -39,13 +39,13 @@ const notify = () => toast.success('Thanks your email is sended')
 
     <div id="contact" className="w-full lg:h-screen min-h-[900px]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <motion.p whileInView={{opacity : [0,1],x:[-30,0]}} transition={{duration:0.4,}}  className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
-        </p>
+        </motion.p>
 
-        <h2 className="py-4">MY Contact </h2>
+        <motion.h2 whileInView={{opacity : [0,1],x:[-50,0]}} transition={{duration:0.4,}}  className="py-4">MY Contact </motion.h2>
 
-        <div className="grid lg:grid-cols-5 gap-8">
+        <motion.div whileInView={{opacity : [0,1],x:[-100,0]}} transition={{duration:0.4,}}  className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
@@ -72,16 +72,30 @@ const notify = () => toast.success('Thanks your email is sended')
 
                   <div className="flex items-center justify-between py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaLinkedin />
+                       <a href="">
+                         <FaLinkedin />
+                       </a>
+                     
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
+                     
+                      <a href="https://github.com/FinoanaRandria">
+                         <FaGithub />
+                      </a>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <HiOutlineMail />
+                      <a href="">
+                        <HiOutlineMail />
+                      </a>
+                      
+
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <BsFillPersonLinesFill />
+                       <a href="">
+                        <BsFillPersonLinesFill />
+                       </a>
+                      
+                      
                     </div>
                   </div>
                 </div>
@@ -159,7 +173,7 @@ const notify = () => toast.success('Thanks your email is sended')
               </form>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="flex justify-center py-12">
           <Link href="/">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 backdrop:">
