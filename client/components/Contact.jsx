@@ -7,7 +7,7 @@ import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import toast ,{Toaster} from 'react-hot-toast'
 import {motion} from 'framer-motion'
-
+import imagecontact from '../assets/contact/contact.jpg'
 
 const Contact = () => {
 
@@ -52,7 +52,7 @@ const notify = () => toast.success('Thanks your email is sended')
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease in duration-300"
-                  src="/../public/assets/contact.jpg"
+                  src={imagecontact}
                   width="405"
                   height="155"
                   alt="/"
