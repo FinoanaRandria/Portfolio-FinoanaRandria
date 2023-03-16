@@ -2,7 +2,17 @@ import React , {useRef, useEffect}from "react";
 import Image from "next/image";
 import animationData2 from '../public/assets/json/40238-happy-coding.json'
 import lottie from "lottie-web";
-import {motion} from 'framer-motion'
+import vscode from '../assets/tools/file_type_vscode_icon_130084.png'
+import vsstudio from '../assets/tools/visual_studio_18908.png'
+import eclipse from '../assets/tools/eclipse_icon_191751.png'
+import androidstd from '../assets/tools/android_studio_alt_macos_bigsur_icon_190394.png'
+import pycharm from '../assets/tools/PyCharm_Icon.svg.png'
+import unity from '../assets/tools//unity_logo_icon_144772.png'
+import ubuntu from '../assets/tools/ubuntu_14143.png'
+import linux from '../assets/tools/kisspng-linux-fedora-unix-operating-systems-linux-5ab6faa3d2f047.949926281521941155864.png'
+
+
+import {motion} from 'framer-motion';
 const Tools = () => {
 
 
@@ -41,7 +51,7 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/tools/file_type_vscode_icon_130084.png"
+                  src={vscode}
                   width="64"
                   height="64"
                   alt="/"
@@ -57,7 +67,7 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/tools/visual_studio_18908.png"
+                  src={vsstudio}
                   width="64"
                   height="64"
                   alt="/"
@@ -73,7 +83,7 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/tools/PyCharm_Icon.svg.png"
+                  src={pycharm}
                   width="64"
                   height="64"
                   alt="/"
@@ -89,7 +99,7 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/tools/eclipse_icon_191751.png"
+                  src={eclipse}
                   width="64"
                   height="64"
                   alt="/"
@@ -105,7 +115,7 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/tools/kisspng-linux-fedora-unix-operating-systems-linux-5ab6faa3d2f047.949926281521941155864.png"
+                  src={linux}
                   width="64"
                   height="64"
                   alt="/"
@@ -121,7 +131,7 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/tools/ubuntu_14143.png"
+                  src={ubuntu}
                   width="64"
                   height="64"
                   alt="/"
@@ -137,7 +147,7 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/tools/android_studio_alt_macos_bigsur_icon_190394.png"
+                  src={androidstd}
                   width="64"
                   height="64"
                   alt="/"
@@ -153,7 +163,7 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src="/../public/assets/tools/unity_logo_icon_144772.png"
+                  src={unity}
                   width="64"
                   height="64"
                   alt="/"
