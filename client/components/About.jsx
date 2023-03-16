@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import pdp from '../assets/imagepdp.JPG'
+import pdp1 from '../assets/imagepdp.jpg'
 import { motion } from "framer-motion";
 const About = () => {
   return (
@@ -85,7 +85,7 @@ const About = () => {
         <div  className="w-full h-full  m-auto shadow-xl shadow-gray-400  rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
             className="rounded-xl"
-            src={pdp}
+            src={pdp1}
             alt="pdp"
             width="325"
             height="65"
