@@ -69,7 +69,8 @@ const About = () => {
             </motion.p>
           </Link>
 
-          <div className="mb-7">
+          <motion.div whileInView={{ opacity: [0, 1], x: [-50, 0] }}
+              transition={{ duration: 0.4 }}  className="mb-7">
             <a
               target="_blank"
               href="https://gateway.pinata.cloud/ipfs/QmNT8ztJhjDJG5j5Co6F9WFxgv9Zmrh4pHL67Dg8h8KHjE?_gl=1*18cv2mk*_ga*NzkxMmIzOTItNzgyMC00Y2FmLWE5NWMtNWJhZTJlYjVmZTRk*_ga_5RMPXG14TE*MTY3ODgxNjk5MC4xLjEuMTY3ODgxNzE1NS40Mi4wLjA."
@@ -78,7 +79,7 @@ const About = () => {
             >
               CV
             </a>
-          </div>
+          </motion.div>
         </motion.div>
         <div  className="w-full h-full  m-auto shadow-xl shadow-gray-400  rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image

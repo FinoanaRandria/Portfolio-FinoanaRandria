@@ -9,6 +9,7 @@ import Contact from '../../components/Contact'
 import Education from '../../components/Education'
 import Tools from '../../components/Tools'
 import toast ,{Toaster} from 'react-hot-toast'
+import Contribution from '../../components/Contribution'
 
 
 
@@ -33,6 +34,7 @@ export default function Home() {
          
        <Skills/>
        <Tools/>
+        <Contribution/>
        <Projects/>
         <Contact/>
         <Toaster

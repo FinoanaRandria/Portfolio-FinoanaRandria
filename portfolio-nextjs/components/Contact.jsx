@@ -72,7 +72,7 @@ const notify = () => toast.success('Thanks your email is sended')
 
                   <div className="flex items-center justify-between py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                       <a href="">
+                       <a href="https://www.linkedin.com/in/randri-finoana-ba771b24a/">
                          <FaLinkedin />
                        </a>
                      

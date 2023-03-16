@@ -80,8 +80,8 @@ const Navbar = () => {
             <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href="/#tools">
-              <li className="ml-10 text-sm uppercase hover:border-b">Tools</li>
+            <Link href="/#stats">
+              <li className="ml-10 text-sm uppercase hover:border-b">Stats</li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
@@ -155,9 +155,9 @@ const Navbar = () => {
                   Skills
                 </li>
               </Link>
-              <Link href="/#tools">
+              <Link href="/#stats">
                 <li onClick={() => setnav(false)} className="py-4 text-sm">
-                  Tools
+                  Stats
                 </li>
               </Link>
 
@@ -179,16 +179,28 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <a href="https://www.linkedin.com/in/randri-finoana-ba771b24a/">
+                    <FaLinkedinIn />
+                  </a>
+                  
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <a href="https://github.com/FinoanaRandria">
+                    <FaGithub />
+                  </a>
+                  
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <HiOutlineMail />
+                  <a href="https://mail.google.com/mail/u/0/?tab=km#inbox">
+                     <HiOutlineMail />
+                  </a>
+                 
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                  <a href="">
+                    <BsFillPersonLinesFill />
+                  </a>
+                  
                 </div>
               </div>
             </div>
