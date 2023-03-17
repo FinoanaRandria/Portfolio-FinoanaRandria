@@ -5,20 +5,42 @@ import { HiOutlineChevronDoubleUp, HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
-import toast ,{Toaster} from 'react-hot-toast'
-import {motion} from 'framer-motion'
-import imagecontact from '../assets/contact/contact.jpg'
+import swal from "sweetalert";
+import { motion } from "framer-motion";
+import imagecontact from "../assets/contact/contact.jpg";
 
 const Contact = () => {
+  const handleClickAlert = () => {
+    const userName = form.current.user_name.value;
+    const phoneNumber = form.current.phone_number.value;
+    const Email = form.current.email.value;
+    const Subject = form.current.subject.value; 
+    const Message =  form.current.message.value;  
 
-const notify = () => toast.success('Thanks your email is sended')
+
+    if (userName && phoneNumber && Email && Subject && Message) {
+      swal("Mail sended", "Your message has been successfully sent to finoana! ", "success");
+    } 
+  };
 
   const form = useRef();
 
   const sendEmail = (e) => {
+    
     e.preventDefault();
 
-    emailjs
+
+    const userName = form.current.user_name.value;
+    const phoneNumber = form.current.phone_number.value;
+    const Email = form.current.email.value;
+    const Subject = form.current.subject.value; 
+    const Message =  form.current.message.value; 
+  
+
+
+    if(userName && phoneNumber && Email && Subject && Message){
+
+      emailjs
       .sendForm(
         "service_rbxpfum",
         "template_sm5ryp4",
@@ -27,25 +49,46 @@ const notify = () => toast.success('Thanks your email is sended')
       )
       .then(
         (result) => {
-          console.log('sended')
+          console.log("sended");
+
+          form.current.reset();
         },
         (error) => {
-          console.log(error.text);
+          swal("Mail not sent", "Oops! Something went wrong while sending your message.", "error");
         }
       );
+
+    }else{
+
+      swal("Mail not sent", "Please fill in all the required fields.", "warning");
+    }
+    
   };
 
   return (
-
     <div id="contact" className="w-full lg:h-screen min-h-[900px]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <motion.p whileInView={{opacity : [0,1],x:[-30,0]}} transition={{duration:0.4,}}  className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <motion.p
+          whileInView={{ opacity: [0, 1], x: [-30, 0] }}
+          transition={{ duration: 0.4 }}
+          className="text-xl tracking-widest uppercase text-[#5651e5]"
+        >
           Contact
         </motion.p>
 
-        <motion.h2 whileInView={{opacity : [0,1],x:[-50,0]}} transition={{duration:0.4,}}  className="py-4">MY Contact </motion.h2>
+        <motion.h2
+          whileInView={{ opacity: [0, 1], x: [-50, 0] }}
+          transition={{ duration: 0.4 }}
+          className="py-4"
+        >
+          MY Contact{" "}
+        </motion.h2>
 
-        <motion.div whileInView={{opacity : [0,1],x:[-100,0]}} transition={{duration:0.4,}}  className="grid lg:grid-cols-5 gap-8">
+        <motion.div
+          whileInView={{ opacity: [0, 1], x: [-100, 0] }}
+          transition={{ duration: 0.4 }}
+          className="grid lg:grid-cols-5 gap-8"
+        >
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
@@ -72,30 +115,24 @@ const notify = () => toast.success('Thanks your email is sended')
 
                   <div className="flex items-center justify-between py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                       <a href="https://www.linkedin.com/in/randri-finoana-ba771b24a/">
-                         <FaLinkedin />
-                       </a>
-                     
+                      <a href="https://www.linkedin.com/in/randri-finoana-ba771b24a/">
+                        <FaLinkedin />
+                      </a>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                     
                       <a href="https://github.com/FinoanaRandria">
-                         <FaGithub />
+                        <FaGithub />
                       </a>
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <a href="">
                         <HiOutlineMail />
                       </a>
-                      
-
                     </div>
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                       <a href="">
+                      <a href="">
                         <BsFillPersonLinesFill />
-                       </a>
-                      
-                      
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -112,9 +149,7 @@ const notify = () => toast.success('Thanks your email is sended')
               <form ref={form} onSubmit={sendEmail}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2" >
-                      Name
-                    </label>
+                    <label className="uppercase text-sm py-2">Name</label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
@@ -123,7 +158,7 @@ const notify = () => toast.success('Thanks your email is sended')
                   </div>
 
                   <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2" >
+                    <label className="uppercase text-sm py-2">
                       Phone Number
                     </label>
                     <input
@@ -135,20 +170,16 @@ const notify = () => toast.success('Thanks your email is sended')
                 </div>
 
                 <div className=" flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" >
-                    Email
-                  </label>
+                  <label className="uppercase text-sm py-2">Email</label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
-                    type="email"
+                    type="text"
                     name="email"
                   />
                 </div>
 
                 <div className=" flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" >
-                    Subject
-                  </label>
+                  <label className="uppercase text-sm py-2">Subject</label>
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
@@ -157,18 +188,18 @@ const notify = () => toast.success('Thanks your email is sended')
                 </div>
 
                 <div className=" flex flex-col py-2">
-                  <label className="uppercase text-sm py-2" >
-                    Message
-                  </label>
+                  <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     name="message"
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                   ></textarea>
                 </div>
-                <button  className="w-full p-4 text-gray-100 mt-4 hover:scale-105 ease-in duration-300 " onClick={notify}>
+                <button
+                  className="w-full p-4 text-gray-100 mt-4 hover:scale-105 ease-in duration-300 "
+                  onClick={handleClickAlert}
+                >
                   Send Message
-                  
                 </button>
               </form>
             </div>
