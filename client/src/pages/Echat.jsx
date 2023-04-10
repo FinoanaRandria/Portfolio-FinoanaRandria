@@ -33,7 +33,9 @@ const Echat = () => {
             <strong>Features:</strong>
             Echat is the ideal tool for users who are looking for a simple and convenient chat solution, without the hassle of complex features. Whether for business or personal discussions, Echat offers a convenient, user-friendly and secure chat experience.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+
+          <a href="https://node-chat-app-btas.onrender.com"> <button className="px-8 py-2 mt-4 mr-7">Demo</button>        </a>
+          
           <button className="px-8 py-2 mt-4">Code</button>
         </div>
 
