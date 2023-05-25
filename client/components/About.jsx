@@ -74,7 +74,7 @@ const About = () => {
               transition={{ duration: 0.4 }}  className="mb-7">
             <a
               target="_blank"
-              href="https://gateway.pinata.cloud/ipfs/QmNT8ztJhjDJG5j5Co6F9WFxgv9Zmrh4pHL67Dg8h8KHjE?_gl=1*18cv2mk*_ga*NzkxMmIzOTItNzgyMC00Y2FmLWE5NWMtNWJhZTJlYjVmZTRk*_ga_5RMPXG14TE*MTY3ODgxNjk5MC4xLjEuMTY3ODgxNzE1NS40Mi4wLjA."
+              href="https://drive.google.com/file/d/1EwtuiiJC-7p3M6Nahcu8J4ljTs84qKyQ/view?usp=sharing"
               download="cv.pdf"
               className=" shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] px-20 p-3 text-gray-100 transform hover:scale-125 "
             >
