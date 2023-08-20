@@ -196,7 +196,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <button
-                  className="w-full p-4 text-gray-100 mt-4 hover:scale-105 ease-in duration-300 "
+                  className="w-full p-4 text-gray-100 mt-4 hover:scale-105 ease-in duration-300 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white "
                   onClick={handleClickAlert}
                 >
                   Send Message
