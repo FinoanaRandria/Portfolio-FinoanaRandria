@@ -8,7 +8,8 @@ import Link from "next/link";
 import ProjectsItems from "./ProjectsItems";
 import Gtech from "@/pages/Gtech";
 import {motion} from 'framer-motion'
-
+import AwesomeSlider from 'react-awesome-slider';
+import 'react-awesome-slider/dist/styles.css';
 
 
 const Projects = () => {
@@ -20,33 +21,62 @@ const Projects = () => {
         </motion.p>
         <motion.h2 whileInView={{opacity : [0,1],x:[-50,0]}} transition={{duration:0.4,}}  className="py-4">What I've Built </motion.h2>
         <motion.div whileInView={{opacity : [0,1],x:[-100,0]}} transition={{duration:0.4,}}  className="grid md:grid-cols-2 gap-8">
-          <ProjectsItems
+               <AwesomeSlider>
+
+
+               <div>
+               
+
+
+               <ProjectsItems
             title="Weather Apps"
             backgroundImg={proj1}
             projectUrl="/proprety"
             techno="React JS"
           />
+            </div>
 
-          <ProjectsItems
-            title="G-Tech Esti"
-            backgroundImg={proj3}
-            projectUrl="/Gtech"
-            techno="Node JS/Express JS"
-          />
 
-          <ProjectsItems
-            title="E-find"
-            backgroundImg={proj2}
-            projectUrl="/Efind"
-            techno="React JS /Sanity"
-          />
+            <div>
 
-          <ProjectsItems
-            title="Echat App "
-            backgroundImg={proj4}
-            projectUrl="/Echat"
-            techno="Node JS/Socket io"
-          />
+
+<ProjectsItems
+title="G-Tech Esti"
+backgroundImg={proj3}
+projectUrl="/Gtech"
+techno="Node JS/Express JS"
+/>
+</div>
+
+<div>
+
+
+<ProjectsItems
+title="E-find"
+backgroundImg={proj2}
+projectUrl="/Efind"
+techno="React JS /Sanity"
+/>
+</div>
+
+
+
+
+<div>
+<ProjectsItems
+title="Echat App "
+backgroundImg={proj4}
+projectUrl="/Echat"
+techno="Node JS/Socket io"
+/>
+ 
+</div>
+
+               </AwesomeSlider>
+
+
+            
+           
         </motion.div>
       </div>
     </div>
