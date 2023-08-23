@@ -8,7 +8,7 @@ import eclipse from '../assets/tools/eclipse_icon_191751.png'
 import androidstd from '../assets/tools/android_studio_alt_macos_bigsur_icon_190394.png'
 import pycharm from '../assets/tools/PyCharm_Icon.svg.png'
 import unity from '../assets/tools//unity_logo_icon_144772.png'
-import ubuntu from '../assets/tools/ubuntu_14143.png'
+import arch from '../assets/tools/Arch.png'
 import linux from '../assets/tools/kisspng-linux-fedora-unix-operating-systems-linux-5ab6faa3d2f047.949926281521941155864.png'
 
 
@@ -131,14 +131,14 @@ const Tools = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  src={ubuntu}
+                  src={arch}
                   width="64"
                   height="64"
                   alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Ubuntu</h3>
+                <h3>Arch</h3>
               </div>
             </div>
           </div>
