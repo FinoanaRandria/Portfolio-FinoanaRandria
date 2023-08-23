@@ -22,9 +22,9 @@ const Main = () => {
             </span>{" "}
           </h1>
 
-          <h1 className="py-4 text-gray-700">A Full-Stack Web Developer </h1>
+          <h1 className="py-4 text-gray-700">A MERN-Stack Web Developer </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            I am a Junior Fullstack Developer with a passion for creating
+            I am a Junior MERN-stack Developer with a passion for creating
             innovative and effective solutions to meet user needs. I am
             currently studying for my degree in Computer Science at Esti and am
             looking forward to applying my skills to create great user

@@ -54,9 +54,9 @@ const About = () => {
             className="py-2 text-gray-600"
           >
             My goal is to continue to gain knowledge and skills while working on
-            challenging projects that allow me to grow as a Fullstack developer.
+            challenging projects that allow me to grow as a MERN-stack developer.
             I am confident that I will be an asset to any company looking for a
-            talented and motivated Fullstack developer.
+            talented and motivated MERN-stack developer.
           </motion.p>
 
           <Link href="/#projects">
