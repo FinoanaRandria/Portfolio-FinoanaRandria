@@ -138,7 +138,7 @@ const Tools = () => {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Arch</h3>
+                <h3>Arch linux</h3>
               </div>
             </div>
           </div>
